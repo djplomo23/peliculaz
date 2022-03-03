@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {  useState } from 'react'
 import image from '../img/mision-imposible-4.jpg'
 
 
@@ -6,9 +6,7 @@ export const PelisDetails = ({data}) => {
 
     const [peliPlay, setPeliPlay] = useState(data.pelisLink.netu)
 
-   
-    console.log(data.title)
-    {/*<iframe src={peli.pelis} height="450" width="720" webkitAllowFullScreen mozallowfullscreen allowfullscreen frameborder="0" scrolling="no"></iframe>*/ }
+
 
     return (
         <div className="container">
@@ -27,13 +25,18 @@ export const PelisDetails = ({data}) => {
                     <li><span>Géneros </span>{data.info.generos}</li>
                     <li><span>Actores </span>{data.info.actores}</li>
                 </ul>
+                
             </div>
+
+            <div className='warnning'><p><span>WARNNING!!!</span> No necesitas descargar nada para visualizar las películas</p></div>
+
             <div className='reproductor'>
+            
                 <div className='btn'>
                    
-
-                        <button className='btn-single' onClick={() => setPeliPlay(data.pelisLink.netu)}>Netu</button>
-                        <button className='btn-single' onClick={() => setPeliPlay(data.pelisLink.zplayer)}>zplayer</button>
+                
+                        <button className={peliPlay == data.pelisLink.netu ? 'btn-single-full' : 'btn-single'} onClick={() => setPeliPlay(data.pelisLink.netu)}>Netu</button>
+                        <button className={peliPlay == data.pelisLink.zplayer ? 'btn-single-full' : 'btn-single'} onClick={() => setPeliPlay(data.pelisLink.zplayer)}>zplayer</button>
                 </div>
                 <iframe className='video' src={peliPlay} height="315" width="560" webkitAllowFullScreen="true" mozallowfullscreen="true" allowfullscreen="true" frameborder="0" scrolling="no"></iframe>
 

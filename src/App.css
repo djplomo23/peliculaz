@@ -184,6 +184,18 @@ body{
   background: rgb(159 88 0);
 }
 
+.btn-single-full{
+  margin-left: 10px;
+  border: 2px solid rgb(159, 88, 0);
+  background: rgb(159, 88, 0);
+  border-radius: 5px;
+  padding: 5px 50px;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  margin-bottom: 10px;
+}
+
 .video{
   margin: auto;
   margin-bottom: 50px;
@@ -201,6 +213,16 @@ body{
   margin: 10px;
   overflow: hidden;
   
+}
+
+.warnning{
+  color: white;
+  display: flex;
+  justify-content: center;
+  grid-column: 2;
+}
+.warnning span{
+  color: darkorange;
 }
 
 .card img {
@@ -260,6 +282,7 @@ img {
   }
   .detail{
   margin: 0;
+  height: auto;
   }
   .detail p {
     
