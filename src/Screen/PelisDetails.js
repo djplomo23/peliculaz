@@ -4,7 +4,7 @@ import image from '../img/mision-imposible-4.jpg'
 
 export const PelisDetails = ({data}) => {
 
-    const [peliPlay, setPeliPlay] = useState('')
+    const [peliPlay, setPeliPlay] = useState(data.pelisLink.netu)
 
    
     console.log(data.title)

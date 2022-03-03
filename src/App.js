@@ -108,12 +108,9 @@ function App() {
   },
   ]
 
-  /*useEffect(() => {
-    setpeliculas()
-  }, [third])*/
-  console.log(modal)
 
-  const datas = data?.filter(pelis => pelis.title.toUpperCase().includes(seachBox.toUpperCase()) || pelis.description.toUpperCase().includes(seachBox.toUpperCase()))
+
+  const datas = data?.filter(pelis => pelis.title.toUpperCase().includes(seachBox.toUpperCase()) || pelis.description.toUpperCase().includes(seachBox.toUpperCase()) || pelis.info.origialTitle.toUpperCase().includes(seachBox.toUpperCase()))
 
   const ref = document.querySelector('body')
   modal ? ref.classList.add('app7') : ref.classList.remove('app7')
