@@ -1,5 +1,218 @@
+body{
+  background: rgb(43, 44, 48);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+.app7{
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
+  
+}
+
+.header{
+  width: auto;
+  height: 50px;
+  background: rgb(11, 14, 25);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  
+}
+.footer{
+  width: 100%;
+  height: 10em;
+  background: rgb(11, 14, 25) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+ 
+}
+.footer img {
+  height: 40%;
+}
+
+.body{
+  min-height: 100vh;
+   margin: 10px;
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+
+}
+
+@keyframes example {
+  0% {
+    top: 100vh; }
+  100% {top: 0vh;}
+}
+.containerModal{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  background: rgba(43,44,48,1);
+  z-index: 1000;
+  animation: example;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  animation-duration: 0.5s ;
+ 
+  
+}
+
+.containerModalAnimate{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  background: rgba(43,44,48,1);
+  z-index: 1000;
+  animation: example;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-direction: reverse;
+  animation-duration: 1s ;
+  animation-play-state: running;
+}
+
+.logoModal{
+  height: 40%;
+  width: 40%;
+}
+.containerLogo{
+  width: 100%;
+  height: 20em;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.imgPelis{ 
+  height: 600px;
+  width: 100%;
+  grid-column: 1 / 2;
+  overflow: hidden;
+  margin: auto;
+  
+  
+}
+
+.arrow{
+  display: flex;
+  justify-content: left;
+}
+
+.detail{
+  /*background: rgb(11, 14, 25);*/
+  /*border: solid 1px rgb(159, 88, 0);*/
+  border-radius: 5px;
+  height: 600px;
+  width: 100%;
+  grid-column: 2 / 8;
+  margin: auto;
+  color: white;  
+}
+.detail p {
+  text-align: start;
+  margin: 20px;
+
+}
+.detail ul li{
+  text-align: start;
+  font-weight: 100;
+  margin: 20px;
+}
+.detail span{
+  font-weight: bold;
+  margin: 20px;
+}
+.reproductor{
+  border: solid 1px rgb(159, 88, 0);
+  border-radius: 5px;
+  height: 400px;
+  width: auto;
+  grid-column: 1 / 8;
+  grid-row: 2;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 20px;
+  
+}
+
+.btn{
+  margin: auto;
+  width: 100%;
+  margin: 10px;
+  margin-top: 20px;
+  
+  
+}
+.btn-single{
+  margin-left: 10px;
+  border: 2px solid rgb(159, 88, 0);
+  background: none;
+  border-radius: 5px;
+  padding: 5px 50px;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  margin-bottom: 10px;
+}
+
+.btn-single:hover{
+  transform: scale(1.05);
+  background: rgb(159 88 0);
+}
+
+.video{
+  margin: auto;
+  margin-bottom: 50px;
+  background: #000000;
+  
+  
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+ /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+  transition: 0.3s;
+  max-width: 200px;
+  height: 400px;
+  margin: 10px;
+  overflow: hidden;
+  
+}
+
+.card img {
+  background-size: cover;
+  width: 100%;
+}
+
+img {
+  border-radius: 5px;
+  height: 80%;
+  cursor: pointer;
+  
 }
 
 .App-logo {
@@ -35,4 +248,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .detail{
+  margin: 0;
+  }
+  .detail p {
+    
+    margin: 5px;
+  
+  }
+  .detail ul li{
+   
+    margin: 5px;
+  }
+  .detail span{
+    
+    margin: 5px;
+  }
+  .video{
+    margin: auto;
+    height: auto;
+    width: auto;
+  }
+  .logoModal{
+    height: 80%;
+    width: 80%;
+  }
+
+  
 }
