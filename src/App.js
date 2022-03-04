@@ -33,7 +33,7 @@ function App() {
     info: {origialTitle: 'The Dark Knight Rises' ,director: 'Christopher Nolan', generos: 'Acción / Crimen / Drama', actores: 'Christian Bale, Tom Hardy, Anne Hathaway', },
     years: '2012',
     time: '2h 44min',
-    pelisLink: {netu: 'https://hqq.to/e/VXh4cVpaKzV6S0oyREVKMWJFV0Fpdz09', zplayer: 'https://v2.zplayer.live/video/d8v0uoncarv6'} ,
+    pelisLink: {netu: 'https://hqq.to/e/VXh4cVpaKzV6S0oyREVKMWJFV0Fpdz09', zplayer: 'https://v2.zplayer.live/embed/d8v0uoncarv6'} ,
     image: batman
   },
   {
@@ -53,7 +53,7 @@ function App() {
     info: {origialTitle: 'Mission: Impossible - Rogue Nation' ,director: 'Christopher McQuarrie', generos: 'Acción / Aventura / Suspenso', actores: 'Tom Cruise, Rebecca Ferguson, Jeremy Renner', },
     years: '2015',
     time: '2h 11min',
-    pelisLink: {netu: 'https://hqq.to/e/N1lQTEdPZGN4MzVPWFlCWUlPTmNPZz09', zplayer: 'isComing'} ,
+    pelisLink: {netu: 'https://hqq.to/e/N1lQTEdPZGN4MzVPWFlCWUlPTmNPZz09', zplayer: 'https://v2.zplayer.live/embed/2lxxjfn90zav'} ,
     image: mision2015
   },
   {
@@ -69,7 +69,7 @@ function App() {
   {
     id: 5,
     title: 'Alerta roja',
-    description: 'Un agente de la Interpol le sigue la pista a la ladrona de arte más buscada del mundo.',
+    description: 'John Hartley, agente de la Interpol, no tendrá otro remedio que aliarse con el ladrón de arte más célebre de todos los tiempos, Nolan Booth, para capturar a la ladrona de arte más buscada del presente: la seductora y peligrosa Sarah Black.',
     info: {origialTitle: 'Red Notice' ,director: 'Rawson Marshall Thurber', generos: 'Acción / Comedia / Suspenso', actores: 'Dwayne Johnson, Ryan Reynolds, Gal Gadot', },
     years: '2021',
     time: '1h 58min',
@@ -113,13 +113,14 @@ function App() {
   const datas = data?.filter(pelis => pelis.title.toUpperCase().includes(seachBox.toUpperCase()) || pelis.description.toUpperCase().includes(seachBox.toUpperCase()) || pelis.info.origialTitle.toUpperCase().includes(seachBox.toUpperCase()))
 
   const ref = document.querySelector('body')
-  modal ? ref.classList.add('app7') : ref.classList.remove('app7')
+  modal ? ref.classList.add('app7') : setTimeout(() => {ref.classList.remove('app7')  }, 820);
 
+  
 
   return (
     <div className="App" >
       <header className='header'>
-        <img src={logo} />
+        <img src={logo} alt='Peliculas' alt='Peliculas' />
         <input onChange={e => setSeachBox(e.target.value)}></input>
       </header>
       <div className='body'>
@@ -132,11 +133,12 @@ function App() {
           <path  d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
         </svg></div>
         <div className='containerLogo'>
-          <img className='logoModal' src={logo} />
+          <img onClick={() => setModal(false)} className='logoModal' src={logo} />
         </div>
         <PelisDetails data={data[indexPeli]} />
         <Footer />
       </Modal>
+      <p>La calidad del cien en tu hogar con películas 100% HD, audio latino, sin necesidad de descargar a un solo click de reproducir. Ver películas es la pasión de muchos, y si es Online desde la comodidad de tu hogar es mucho mejor,  y nosotros nos encargamos de que lleguen hasta tus pantallas sin intermediario... PELICULAZ.XYZ</p>
       <Footer />
 
     </div>

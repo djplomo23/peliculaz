@@ -1,8 +1,9 @@
 
 
 export const Modal = ({modal, setModal, children}) => {
-  return (modal && <>
+
+  return ( <>
     
-    <div className='containerModal'  >{children}</div></>
+    <div className={modal ? 'containerModalAnimate' : 'containerModal'}  >{children}</div></>
   )
 }
