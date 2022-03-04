@@ -13,6 +13,9 @@ import redNotice from './img/Alerta-roja.jpg'
 import scream from './img/SCREAM-2022-POSTER.jpg'
 import bell from './img/Good Joe Bell 2020.jpg'
 import repit from './img/Sans répit 2022.jpg'
+import duro from './img/duro-de-cuidar-2.jpg'
+import ice from './img/Against-The-Ice-2022.jpg'
+import duro1 from './img/Duro-de-cuidar-1-peliculaz.xyz.jpg'
 import { Modal } from './Component/Modal';
 import { Footer } from './Component/Footer';
 
@@ -106,6 +109,36 @@ function App() {
     pelisLink: {netu: 'https://hqq.to/e/MkxJVnp1ZCtaajlaVFJad0dJSUJUdz09', zplayer: 'https://v2.zplayer.live/embed/6goco183nri5'} ,
     image: repit
   },
+  {
+    id: 9,
+    title: 'Duro de cuidar',
+    description: 'El mejor guardaespaldas del mundo tiene un nuevo cliente, un asesino a sueldo que debe testificar ante la Corte Penal Internacional. Deben dejar de lado sus diferencias y trabajar juntos para llegar al juicio a tiempo.',
+    info: {origialTitle: "The Hitman's Bodyguard" ,director: 'Patrick Hughes', generos: 'Acción / Crimen / comedia', actores: 'Ryan Reynolds, Samuel L. Jackson, Gary Oldman' },
+    years: '2017',
+    time: '1h 58min',
+    pelisLink: {netu: 'https://hqq.to/e/TmY2ZkZWRjdZeUZWTUwwalV4c3FSUT09', zplayer: ''} ,
+    image: duro1
+  },
+  {
+    id: 10,
+    title: 'Duro de cuidar 2',
+    description: 'Michael Bryce intenta llevar una vida pacífica, pero no puede evitar unirse a Darius y su esposa Sonia en una misión a lo largo de la costa de Amalfi.',
+    info: {origialTitle: "Hitman's Wife's Bodyguard" ,director: 'Patrick Hughes', generos: 'Acción / Crimen / comedia', actores: 'Ryan Reynolds, Samuel L. Jackson, Salma Hayek', },
+    years: '2021',
+    time: '1h 40min',
+    pelisLink: {netu: 'https://hqq.to/e/NDZwNi90OG1MM1Z3Y0NtcWUrc20yZz09', zplayer: ''} ,
+    image: duro
+  },
+  {
+    id: 11,
+    title: 'Perdidos en el Ártico',
+    description: 'Dos hombres que exploran el vasto paisaje de Groenlandia en busca de un mapa perdido luchan por sobrevivir. Basada en la historia real de la expedición danesa de 1909.',
+    info: {origialTitle: "Against the Ice" ,director: 'Peter Flinth', generos: 'Aventura / Drama / Historia', actores: 'Nikolaj Coster-Waldau, Joe Cole, Heida Reed', },
+    years: '2022',
+    time: '1h 42min',
+    pelisLink: {netu: 'https://hqq.to/e/bHdPRC92N3JFa1plM1pZTUpRaE41QT09', zplayer: ''} ,
+    image: ice
+  },
   ]
 
 
@@ -115,7 +148,7 @@ function App() {
   const ref = document.querySelector('body')
   modal ? ref.classList.add('app7') : setTimeout(() => {ref.classList.remove('app7')  }, 820);
 
-  
+  console.log(indexPeli)
 
   return (
     <div className="App" >
@@ -138,7 +171,7 @@ function App() {
         <PelisDetails data={data[indexPeli]} />
         <Footer />
       </Modal>
-      <p>La calidad del cien en tu hogar con películas 100% HD, audio latino, sin necesidad de descargar a un solo click de reproducir. Ver películas es la pasión de muchos, y si es Online desde la comodidad de tu hogar es mucho mejor,  y nosotros nos encargamos de que lleguen hasta tus pantallas sin intermediario... PELICULAZ.XYZ</p>
+      <p style={{margin: '15px', textAlign: 'left'}}>La calidad del cien en tu hogar con películas 100% HD, audio latino, sin necesidad de descargar a un solo click de reproducir. Ver películas es la pasión de muchos, y si es Online desde la comodidad de tu hogar es mucho mejor,  y nosotros nos encargamos de que lleguen hasta tus pantallas sin intermediario... PELICULAZ.XYZ</p>
       <Footer />
 
     </div>

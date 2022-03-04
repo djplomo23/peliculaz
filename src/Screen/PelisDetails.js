@@ -1,12 +1,15 @@
-import {  useState } from 'react'
+import {  useEffect, useState } from 'react'
 import image from '../img/mision-imposible-4.jpg'
 
 
 export const PelisDetails = ({data}) => {
 
     const [peliPlay, setPeliPlay] = useState(data.pelisLink.netu)
-
-
+    useEffect(() => {
+        setPeliPlay(data.pelisLink.netu)
+    }, [data])
+    
+console.log(peliPlay)
 
     return (
         <div className="container">
