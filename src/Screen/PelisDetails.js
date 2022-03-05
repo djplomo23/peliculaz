@@ -1,21 +1,23 @@
 import {  useEffect, useState } from 'react'
-import image from '../img/mision-imposible-4.jpg'
 
 
-export const PelisDetails = ({data}) => {
+
+export const PelisDetails = ({data, modal}) => {
 
     const [peliPlay, setPeliPlay] = useState(data.pelisLink.netu)
     useEffect(() => {
         setPeliPlay(data.pelisLink.netu)
     }, [data])
     
-console.log(peliPlay)
+    useEffect(() => {
+       !modal && setPeliPlay('')
+    }, [modal])
 
     return (
         <div className="container">
            
             <div className="imgPelis">
-                <img src={data.image} />
+                <img src={data.image} alt={data.title} />
             </div>
             <div className="detail">
                 <h1>{data.title}</h1>
@@ -24,6 +26,8 @@ console.log(peliPlay)
                 </p>
                 <ul>
                     <li><span>Título original</span>{data.info.origialTitle}</li>
+                    <li><span>Año</span>{data.years}</li>
+                    <li><span>Tiempo</span>{data.time}</li>
                     <li><span>Director </span>{data.info.director}</li>
                     <li><span>Géneros </span>{data.info.generos}</li>
                     <li><span>Actores </span>{data.info.actores}</li>
@@ -38,10 +42,10 @@ console.log(peliPlay)
                 <div className='btn'>
                    
                 
-                        <button className={peliPlay == data.pelisLink.netu ? 'btn-single-full' : 'btn-single'} onClick={() => setPeliPlay(data.pelisLink.netu)}>Netu</button>
-                        <button className={peliPlay == data.pelisLink.zplayer ? 'btn-single-full' : 'btn-single'} onClick={() => setPeliPlay(data.pelisLink.zplayer)}>zplayer</button>
+                        <button className={peliPlay === data.pelisLink.netu ? 'btn-single-full' : 'btn-single'} onClick={() => setPeliPlay(data.pelisLink.netu)}>Netu</button>
+                        <button className={peliPlay === data.pelisLink.zplayer ? 'btn-single-full' : 'btn-single'} onClick={() => setPeliPlay(data.pelisLink.zplayer)}>zplayer</button>
                 </div>
-                <iframe className='video' src={peliPlay} height="315" width="560" webkitAllowFullScreen="true" mozallowfullscreen="true" allowfullscreen="true" frameborder="0" scrolling="no"></iframe>
+                <iframe title={data.title} className='video' src={peliPlay} height="315" width="560" webkitAllowFullScreen="true" mozallowfullscreen="true" allowfullscreen="true" frameborder="0" scrolling="no"></iframe>
 
 
 

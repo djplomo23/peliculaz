@@ -15,7 +15,7 @@ export const Card = ({ pelis, setModal, setIndexPeli }) => {
 
     
     return (<div  className="card">
-        <img onClick={() => handleClick(pelis.i) } src={pelis.pelis.image} alt="Avatar" />
+        <img loading="lazy" onClick={() => handleClick(pelis.i) } src={pelis.pelis.image} alt="Avatar" />
         <div className="container">
          
         </div>
