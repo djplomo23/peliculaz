@@ -15,6 +15,7 @@ import spider from 'img/Spider-Man-2018.jpg';
 import ralph from 'img/ralph-2018.jpg';
 import aquaman from 'img/aquaman-2018.png';
 import mind from 'img/THEDARKESTMINDS.jpg'; 
+import bellezaOculta from 'img/belleza-oculta.jpg'
 
 export const data = [
   {
@@ -339,6 +340,25 @@ export const data = [
       zplayer: "",
     },
     image: aquaman,
+  },
+  {
+    id: 18,
+    title: "Belleza oculta",
+    description:
+      'Retraído tras una tragedia, un hombre escribe al Amor, el Tiempo, y la Muerte. Recibe inesperadas respuestas y empieza a ver como estos se relacionan, y como su pérdida puede desvelar momentos llenos de significado y belleza.',
+    info: {
+      origialTitle: "Collateral Beauty",
+      director: "David Frankel",
+      generos: "Drama / Romance ",
+      actores: "Will Smith, Edward Norton, Kate Winslet",
+    },
+    years: "2016",
+    time: "1h 37min",
+    pelisLink: {
+      netu: "https://hqq.to/e/N2Y3SmFvRDNJOUo2WUxtRkRGWHZsdz09",
+      zplayer: "",
+    },
+    image: bellezaOculta,
   },
   
 ];
