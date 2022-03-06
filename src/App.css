@@ -126,6 +126,7 @@ body{
 .arrow{
   display: flex;
   justify-content: left;
+  cursor: pointer;
 }
 
 .detail{

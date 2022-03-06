@@ -5,11 +5,12 @@
 
 
 
-export const Card = ({ pelis, setModal, setIndexPeli }) => {
+export const Card = ({ pelis, setModal, setIndexPeli, setAnimacion }) => {
 
     const handleClick = (i) => {
         setModal(true)
         setIndexPeli(i)
+        setAnimacion(true)
         
     }
 
