@@ -12,9 +12,11 @@ export const PelisDetails = ({ data, modal }) => {
   /* useEffect(() => {
     !modal && setPeliPlay("");
   }, [modal]);*/
-
+  
+  let w = window.innerWidth
+  console.log(w)
   return (
-    <div style={{ display: modal ? "grid" : "hidden" }} className="container">
+    <div style={{ display: modal ? (w < 768 ? "flex" : "grid") : "hidden" }} className="container">
       <div className="imgPelis">
         <img src={data.image} alt={data.title} />
       </div>
