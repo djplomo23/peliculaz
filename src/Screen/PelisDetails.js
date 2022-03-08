@@ -14,7 +14,7 @@ export const PelisDetails = ({ data, modal }) => {
   }, [modal]);*/
   
   let w = window.innerWidth
-  console.log(w)
+  
   return (
     <div style={{ display: modal ? (w < 768 ? "flex" : "grid") : "hidden" }} className="container">
       <div className="imgPelis">

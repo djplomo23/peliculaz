@@ -16,6 +16,9 @@ import ralph from 'img/ralph-2018.jpg';
 import aquaman from 'img/aquaman-2018.png';
 import mind from 'img/THEDARKESTMINDS.jpg'; 
 import bellezaOculta from 'img/belleza-oculta.jpg'
+import blacklight from 'img/Blacklight 2022.jpg'
+import Jordan from 'img/A Journal for Jordan 2021.jpg'
+import Colao from 'img/colao.jpg'
 
 export const data = [
   {
@@ -359,6 +362,63 @@ export const data = [
       zplayer: "",
     },
     image: bellezaOculta,
+  },
+  {
+    id: 19,
+    title: "Blacklight",
+    description:
+      'Travis Block es un agente del gobierno que acepta su oscuro pasado. Cuando descubre un complot dirigido a ciudadanos estadounidenses, Block se encuentra en la mira del director del FBI, a quien una vez ayudó a proteger.',
+    info: {
+      origialTitle: "Blacklight",
+      director: "Mark Williams",
+      generos: "Acción / Suspenso ",
+      actores: "Liam Neeson, Aidan Quinn, Taylor John Smith",
+    },
+    years: "2022",
+    time: "1h 44min",
+    pelisLink: {
+      netu: "https://hqq.to/e/WFJUQmlXbncxWUI2dEZKMTZiYWQ0UT09",
+      zplayer: "",
+    },
+    image: blacklight,
+  },
+  {
+    id: 20,
+    title: "Un diario para Jordan",
+    description:
+      'Sargento Primero, Charles Monroe King, antes de ser asesinado en acción en Bagdad, escribe un diario para su hijo con la intención de decirle cómo vivir una vida decente a pesar de crecer sin un padre.',
+    info: {
+      origialTitle: "A Journal for Jordan",
+      director: "Denzel Washington",
+      generos: "Drama",
+      actores: "Michael B. Jordan, Chanté Adams, Jalon Christian",
+    },
+    years: "2021",
+    time: "2h 11min",
+    pelisLink: {
+      netu: "https://hqq.to/e/OGozQXg1bVNpc0JVM0F6Wnd5dDVxZz09",
+      zplayer: "",
+    },
+    image: Jordan,
+  },
+  {
+    id: 21,
+    title: "Colao",
+    description:
+      'Un cultivador de café, soltero y a punto de llegar a la cuarentena, se va a la ciudad en busca de lo único que falta en su vida, el amor.',
+    info: {
+      origialTitle: "Colao",
+      director: "Frank Perozo",
+      generos: "Comedia / Romance",
+      actores: "Manny Perez, Celines Toribio, Anthony Alvarez",
+    },
+    years: "2017",
+    time: "1h 28min",
+    pelisLink: {
+      netu: "https://hqq.to/e/bXFLdGcxLzVKdW92RUs0eWlHSFpmQT09",
+      zplayer: "https://v2.zplayer.live/embed/88m1v09qxknk",
+    },
+    image: Colao,
   },
   
 ];

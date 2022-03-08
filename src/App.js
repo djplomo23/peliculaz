@@ -56,7 +56,7 @@ function App() {
             setAnimacion={setAnimacion}
           />
          
-        ))}
+        )).reverse()}
       </div>
       <Modal modal={modal} setModal={setModal}>
         <div onClick={() => accionHandler()} className="arrow">
