@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^peliculaz.xyz\.com [NC]
+RewriteRule ^(.*)$ https://www.peliculaz.xyz/$1 [R,L]

@@ -1,4 +1,5 @@
 import { Card } from "Component/Card";
+import { SlipePelis } from "Component/slipePelis";
 import { useEffect, useState } from "react";
 
 export const PelisDetails = ({ data, modal }) => {
@@ -16,7 +17,7 @@ export const PelisDetails = ({ data, modal }) => {
   let w = window.innerWidth
   
   return (
-    <div style={{ display: modal ? (w < 768 ? "flex" : "grid") : "hidden" }} className="container">
+    <div style={{ display: modal ? (w < 768 ? "flex" : "grid") : "none" }} className="container">
       <div className="imgPelis">
         <img src={data.image} alt={data.title} />
       </div>
@@ -56,6 +57,7 @@ export const PelisDetails = ({ data, modal }) => {
           <span>WARNNING!!!</span> No necesitas descargar nada para visualizar
           las películas
         </p>
+        
       </div>
 
       <div className="reproductor">
@@ -94,6 +96,8 @@ export const PelisDetails = ({ data, modal }) => {
           scrolling="no"
         ></iframe>
       </div>
+            
+      
       
     </div>
   );

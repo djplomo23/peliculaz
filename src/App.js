@@ -1,4 +1,4 @@
-import React, {Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import "App.css";
 
 import { PelisDetails } from "Screen/PelisDetails";
@@ -7,16 +7,14 @@ import { Modal } from "Component/Modal";
 import { Footer } from "Component/Footer";
 import { data } from "dataBd/data";
 import slowImport from "Helpers/Helpers";
-import {Card} from "Component/Card"
+import { Card } from "Component/Card";
 
 function App() {
   const [seachBox, setSeachBox] = useState("");
   const [modal, setModal] = useState(false);
   const [animacion, setAnimacion] = useState(false);
   const [indexPeli, setIndexPeli] = useState(0);
-
- 
- 
+  const [currentPage, setCurrentPage] = useState(0);
 
   const datas = data?.filter(
     (pelis) =>
@@ -25,7 +23,6 @@ function App() {
       pelis.info.origialTitle.toUpperCase().includes(seachBox.toUpperCase())
   );
 
-  
   const ref = document.querySelector("body");
   animacion
     ? ref.classList.add("app7")
@@ -33,10 +30,17 @@ function App() {
         ref.classList.remove("app7");
       }, 820);
 
-      const accionHandler = () => {
-        setModal(false) 
-        setAnimacion(false)
-      }
+  const accionHandler = () => {
+    setModal(false);
+    setAnimacion(false);
+  };
+
+ /* const nextPage = () => {
+    setCurrentPage(currentPage + 10);
+  };
+  const prevPage = () => {
+    if (currentPage > 0) setCurrentPage(currentPage - 10);
+  };*/
 
   return (
     <div className="App">
@@ -45,19 +49,24 @@ function App() {
         <input onChange={(e) => setSeachBox(e.target.value)}></input>
       </header>
       <div className="body">
-        {datas.map((pelis, i) => (
-          
-          <Card
-            key={pelis.id}
-            modal={modal}
-            setModal={setModal}
-            pelis={{ pelis, i }}
-            setIndexPeli={setIndexPeli}
-            setAnimacion={setAnimacion}
-          />
-         
-        )).reverse()}
+        {datas
+          .map((pelis, i) => (
+            <Card
+              key={pelis.id}
+              modal={modal}
+              setModal={setModal}
+              pelis={{ pelis, i }}
+              setIndexPeli={setIndexPeli}
+              setAnimacion={setAnimacion}
+            />
+          ))
+          .reverse()
+          }
       </div>
+     {/* <div>
+        <button onClick={prevPage}>Atras</button>
+        <button onClick={nextPage}>Siguiente</button>
+        </div>*/}
       <Modal modal={modal} setModal={setModal}>
         <div onClick={() => accionHandler()} className="arrow">
           <svg
@@ -79,7 +88,7 @@ function App() {
             src={logo}
           />
         </div>
-        <PelisDetails modal={modal} data={data[indexPeli]} />
+        <PelisDetails  modal={modal} data={data[indexPeli]} />
         <Footer />
       </Modal>
       <p style={{ margin: "15px", textAlign: "left" }}>

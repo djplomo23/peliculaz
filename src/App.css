@@ -167,6 +167,7 @@ body{
   
 }
 
+
 .btn{
   margin: auto;
   width: 100%;
@@ -226,8 +227,11 @@ body{
 .warnning{
   color: white;
   display: flex;
+  flex-wrap: wrap ;
   justify-content: center;
   grid-column: 2;
+  width: auto;
+  
 }
 .warnning span{
   color: darkorange;
