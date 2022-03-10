@@ -1,37 +1,50 @@
-import { Card } from "Component/Card";
-import { SlipePelis } from "Component/slipePelis";
+
+
 import { useEffect, useState } from "react";
+import { useParams  } from "react-router-dom";
+import {data} from 'dataBd/data'
 
-export const PelisDetails = ({ data, modal }) => {
-  const [peliPlay, setPeliPlay] = useState(data.pelisLink.netu);
+export const PelisDetails = () => {
+  const [peliPlay, setPeliPlay] = useState('');
+ 
+
+  const params = useParams()
+
+
+
+  const datas = data?.find(peli =>  peli.id == params.id && peli)
+
+useEffect(() => {
+    setPeliPlay(datas.pelisLink.netu);
+  }, [datas]);
+
   useEffect(() => {
-    setPeliPlay(data.pelisLink.netu);
-  }, [data]);
+    
+      window.scrollTo(0, 0)
 
+  }, [])
 
 
   /* useEffect(() => {
     !modal && setPeliPlay("");
   }, [modal]);*/
-  
-  let w = window.innerWidth
-  
-  return (
-    <div style={{ display: modal ? (w < 768 ? "flex" : "grid") : "none" }} className="container">
+ 
+  return ( datas &&
+    <div  className="container">
       <div className="imgPelis">
-        <img src={data.image} alt={data.title} />
+        <img src={datas.image} alt={datas.title} />
       </div>
       <div className="detail">
-        <h1>{data.title}</h1>
-        <p>{data.description}</p>
+        <h1>{datas.title}</h1>
+        <p>{datas.description}</p>
         <ul>
           <li>
             <span>Título original</span>
-            {data.info.origialTitle}
+            {datas.info.origialTitle}
           </li>
           <li>
             <span>Año</span>
-            {data.years}
+            {datas.years}
           </li>
           <li>
             <span>Tiempo</span>
@@ -39,15 +52,15 @@ export const PelisDetails = ({ data, modal }) => {
           </li>
           <li>
             <span>Director </span>
-            {data.info.director}
+            {datas.info.director}
           </li>
           <li>
             <span>Géneros </span>
-            {data.info.generos}
+            {datas.info.generos}
           </li>
           <li>
             <span>Actores </span>
-            {data.info.actores}
+            {datas.info.actores}
           </li>
         </ul>
       </div>
@@ -64,27 +77,27 @@ export const PelisDetails = ({ data, modal }) => {
         <div className="btn">
           <button
             className={
-              peliPlay === data.pelisLink.netu
+              peliPlay === datas.pelisLink.netu
                 ? "btn-single-full"
                 : "btn-single"
             }
-            onClick={() => setPeliPlay(data.pelisLink.netu)}
+            onClick={() => setPeliPlay(datas.pelisLink.netu)}
           >
             Netu
           </button>
           <button
             className={
-              peliPlay === data.pelisLink.zplayer
+              peliPlay === datas.pelisLink.zplayer
                 ? "btn-single-full"
                 : "btn-single"
             }
-            onClick={() => setPeliPlay(data.pelisLink.zplayer)}
+            onClick={() => setPeliPlay(datas.pelisLink.zplayer)}
           >
             zplayer
           </button>
         </div>
         <iframe
-          title={data.title}
+          title={datas.title}
           className="video"
           src={peliPlay}
           height="315"

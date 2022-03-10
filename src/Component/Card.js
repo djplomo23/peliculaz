@@ -1,25 +1,20 @@
+import { Link } from "react-router-dom";
+
+export const Card = ({ pelis}) => {
 
 
+  console.log(pelis);
 
-
-
-
-
-export const Card = ({ pelis, setModal, setIndexPeli, setAnimacion }) => {
-
-    const handleClick = (i) => {
-        setModal(true)
-        setIndexPeli(i)
-        setAnimacion(true)
-        
-    }
-
-    
-    return (<div  className="card">
-        <img loading="lazy" onClick={() => handleClick(pelis.i) } src={pelis.pelis.image} alt="Avatar" />
-        <div className="container">
-         
-        </div>
-    </div>)
-
-}
+  return (
+    <div className="card">
+      <Link to={`/pelicula=${pelis.pelis.title.replace(/ /g, '-' )}/id=${pelis.pelis.id}`}>
+        <img
+          loading="lazy"
+          src={pelis.pelis.image}
+          alt="Avatar"
+        />
+      </Link>
+      <div className="container"></div>
+    </div>
+  );
+};

@@ -1,27 +1,18 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { useState } from "react";
 import "App.css";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 import { PelisDetails } from "Screen/PelisDetails";
 import logo from "img/peliculaZ-logo.png";
 import { Modal } from "Component/Modal";
 import { Footer } from "Component/Footer";
-import { data } from "dataBd/data";
-import slowImport from "Helpers/Helpers";
-import { Card } from "Component/Card";
+import { AllPelis } from "Screen/AllPelis";
 
 function App() {
   const [seachBox, setSeachBox] = useState("");
   const [modal, setModal] = useState(false);
   const [animacion, setAnimacion] = useState(false);
-  const [indexPeli, setIndexPeli] = useState(0);
-  const [currentPage, setCurrentPage] = useState(0);
 
-  const datas = data?.filter(
-    (pelis) =>
-      pelis.title.toUpperCase().includes(seachBox.toUpperCase()) ||
-      pelis.description.toUpperCase().includes(seachBox.toUpperCase()) ||
-      pelis.info.origialTitle.toUpperCase().includes(seachBox.toUpperCase())
-  );
 
   const ref = document.querySelector("body");
   animacion
@@ -35,21 +26,31 @@ function App() {
     setAnimacion(false);
   };
 
- /* const nextPage = () => {
+  /* const nextPage = () => {
     setCurrentPage(currentPage + 10);
   };
   const prevPage = () => {
     if (currentPage > 0) setCurrentPage(currentPage - 10);
   };*/
-
+  let navigate = useNavigate()
+  const logoClick = () => {
+    navigate("../", { replace: true });
+  }
   return (
     <div className="App">
       <header className="header">
-        <img src={logo} alt="Peliculas" />
+        
+        <img onClick={logoClick} src={logo} alt="Peliculas" />
+        
         <input onChange={(e) => setSeachBox(e.target.value)}></input>
       </header>
       <div className="body">
-        {datas
+        <Routes>
+          <Route path="/" element={<AllPelis seachBoxAll={seachBox} />} />
+         <Route path="/pelicula=:title/id=:id" element={<PelisDetails />} />
+        </Routes>
+
+        {/*datas
           .map((pelis, i) => (
             <Card
               key={pelis.id}
@@ -61,9 +62,9 @@ function App() {
             />
           ))
           .reverse()
-          }
+          */}
       </div>
-     {/* <div>
+      {/* <div>
         <button onClick={prevPage}>Atras</button>
         <button onClick={nextPage}>Siguiente</button>
         </div>*/}
@@ -88,7 +89,7 @@ function App() {
             src={logo}
           />
         </div>
-        <PelisDetails  modal={modal} data={data[indexPeli]} />
+       { /*<PelisDetails modal={modal} data={data[indexPeli]} />*/}
         <Footer />
       </Modal>
       <p style={{ margin: "15px", textAlign: "left" }}>
