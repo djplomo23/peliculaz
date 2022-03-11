@@ -19,6 +19,14 @@ import bellezaOculta from 'img/belleza-oculta.jpg'
 import blacklight from 'img/Blacklight 2022.jpg'
 import Jordan from 'img/A Journal for Jordan 2021.jpg'
 import Colao from 'img/colao.jpg'
+import cazaFantasma from 'img/cazafantasmas.jpg'
+import alien from 'img/alien-3.jpg'
+import logan from 'img/Logan.png'
+import kingRichard from 'img/King-Richard.jpg'
+import ThePirates from 'img/The-Pirates.jpg'
+import Kingsman from 'img/Kingsman.jpg'
+import TurningRed from 'img/Turning-Red.webp'
+import ProyectorAdams from 'img/ProyectorAdams.jpg'
 
 export const data = [
   {
@@ -420,5 +428,156 @@ export const data = [
     },
     image: Colao,
   },
-  
+  {
+    id: 22,
+    title: "Cazafantasmas: Más allá",
+    description:
+      'na madre soltera y sus dos hijos llegan a una pequeña ciudad, descubriendo su conexión con los cazafantasmas originales y el legado secreto que dejó su abuelo tras de sí. Secuela directa de "Cazafantasmas 2".',
+    info: {
+      origialTitle: "Ghostbusters: Afterlife",
+      director: "Jason Reitman",
+      generos: "Aventura / Comedia / Fantasía",
+      actores: "Carrie Coon, Paul Rudd, Finn Wolfhard",
+    },
+    years: "2021",
+    time: "2h 4min",
+    pelisLink: {
+      netu: "https://hqq.to/e/cHczbnpuakRDdmFMQ3FJbmpqWDVtQT09",
+      zplayer: "",
+    },
+    image: cazaFantasma,
+  },
+  {
+    id: 23,
+    title: "Alien³",
+    description:
+      'Tras su último encuentro, Ripley aterriza en Fiorina 161, prisión de máxima seguridad. Cuando una serie de extraños y mortales acontecimientos ocurren después de su llegada, se da cuenta de que ha traído consigo a un visitante no deseado.',
+    info: {
+      origialTitle: "Alien³",
+      director: "David Fincher",
+      generos: "Acción / Terrero / Ciencia Ficción",
+      actores: "Sigourney Weaver, Charles S. Dutton, Charles Dance",
+    },
+    years: "1992",
+    time: "1h 54min",
+    pelisLink: {
+      netu: "https://hqq.to/e/SlAydVlJOFlWbFY0YVVkalZaZjZtUT09",
+      zplayer: "",
+    },
+    image: alien,
+  },
+  {
+    id: 24,
+    title: "Logan",
+    description:
+      'En el futuro cercano, un cansado Logan cuida de un Profesor X enfermo, en algún lugar de la frontera con México. Sin embargo, los intentos de Logan de esconderse del mundo y su legado se ven afectados cuando llega una joven mutante, perseguida por fuerzas oscuras.',
+    info: {
+      origialTitle: "Logan",
+      director: "James Mangold",
+      generos: "Acción / Drama / Ciencia Ficción",
+      actores: "Hugh Jackman, Patrick Stewart, Dafne Keen",
+    },
+    years: "2017",
+    time: "2h 17min",
+    pelisLink: {
+      netu: "https://hqq.to/e/SitETjlCeXpCQWgxaEtiQXRQZTljZz09",
+      zplayer: "",
+    },
+    image: logan,
+  },
+  {
+    id: 25,
+    title: "El método Williams",
+    description:
+      'Mira cómo las superestrellas del tenis Venus y Serena Williams se convirtieron en quienes son hoy, gracias al entrenamiento de su padre Richard Williams.',
+    info: {
+      origialTitle: "King Richard",
+      director: "Reinaldo Marcus Green",
+      generos: "Biografía / Drama / Deporte",
+      actores: "Will Smith, Aunjanue Ellis, Jon Bernthal",
+    },
+    years: "2021",
+    time: "2h 24min",
+    pelisLink: {
+      netu: "https://hqq.to/e/alpNZXBYR2RMQ0NFaUN6NWFUb1ladz09",
+      zplayer: "",
+    },
+    image: kingRichard,
+  },
+  {
+    id: 26,
+    title: "Piratas: El último tesoro de la corona",
+    description:
+      'Secuela de "Los Piratas" de 2014. En la era Joseon, una valiente tripulación de piratas y bandidos se enfrenta a las aguas bravas e intenta descifrar las pistas para encontrar el oro real perdido antes de que lo hagan sus rivales.',
+    info: {
+      origialTitle: "The Pirates: The Last Royal Treasure",
+      director: "Jeong-hoon Kim",
+      generos: "Acción / Aventura / Comedia",
+      actores: "Jennifer Sun Bell(English version), Kang Ha-neul, Jason Her(voz)",
+    },
+    years: "2022",
+    time: "2h 6min",
+    pelisLink: {
+      netu: "https://hqq.to/e/bXpSSHlwb3dKcUZLU2hPS1JaWjI0UT09",
+      zplayer: "",
+    },
+    image: ThePirates,
+  },
+  {
+    id: 27,
+    title: "Kingsman: Servicio secreto",
+    description:
+      'Una organización de espionaje recluta a un prometedor chico de la calle en el programa de entrenamiento de la agencia, mientras que una amenaza global surge de un retorcido genio de la tecnología.',
+    info: {
+      origialTitle: "Kingsman: Servicio secreto",
+      director: "Matthew Vaughn",
+      generos: "Acción / Aventura / Comedia",
+      actores: "Colin Firth, Taron Egerton, Samuel L. Jackson",
+    },
+    years: "2014",
+    time: "2h 9min",
+    pelisLink: {
+      netu: "https://hqq.to/e/eThrYWNPQnlHZHVQa2dTM09lQVg1UT09",
+      zplayer: "",
+    },
+    image: Kingsman,
+  },
+  {
+    id: 28,
+    title: "Volviendose Rojo",
+    description:
+      'Una joven vive un año formativo en compañía de un enorme panda rojo blandito.',
+    info: {
+      origialTitle: "Turning Red",
+      director: "Domee Shi",
+      generos: "Animacíon / Aventura / Comedia",
+      actores: "Rosalie Chiang(voz), Sandra Oh(voz), Ava Morse(voz)",
+    },
+    years: "2022",
+    time: "1h 40min",
+    pelisLink: {
+      netu: "https://hqq.to/e/UjF0YjF5WnJCQVlZWTlSK0ZWVGh5QT09",
+      zplayer: "",
+    },
+    image: TurningRed,
+  },
+  {
+    id: 29,
+    title: "El proyecto Adam",
+    description:
+      'A time-traveling pilot teams up with his younger self and his late father to come to terms with his past while saving the future.',
+    info: {
+      origialTitle: "The Adam Project",
+      director: "Shawn Levy",
+      generos: "Acción / Aventura / Comedia",
+      actores: "Ryan Reynolds, Walker Scobell, Mark Ruffalo",
+    },
+    years: "2022",
+    time: "1h 46min",
+    pelisLink: {
+      netu: "https://hqq.to/e/WjZtNTF0dVlDSWNKN1FiTWppZFU2dz09",
+      zplayer: "",
+    },
+    image: ProyectorAdams,
+  },
 ];
