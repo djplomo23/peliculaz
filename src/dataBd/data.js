@@ -42,7 +42,7 @@ export const data = [
   },
   {
     id: 2,
-    title: "Misión: Imposible - Protocolo fantasma",
+    title: "Misión: Imposible Protocolo fantasma",
     description:
       "El IMF es clausurado cuando se ve incriminado en un ataque bomba al Kremlin. Ethan Hunt y su nuevo equipo se embarcan en un misión clandestina para limpiar el nombre de la organización.",
     info: {

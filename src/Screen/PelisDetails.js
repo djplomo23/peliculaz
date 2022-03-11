@@ -48,7 +48,7 @@ useEffect(() => {
           </li>
           <li>
             <span>Tiempo</span>
-            {data.time}
+            {datas.time}
           </li>
           <li>
             <span>Director </span>
