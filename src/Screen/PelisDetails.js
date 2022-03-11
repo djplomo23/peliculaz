@@ -3,10 +3,12 @@
 import { useEffect, useState } from "react";
 import { useParams  } from "react-router-dom";
 import {data} from 'dataBd/data'
+import { useSEO } from "Hooks/useSEO";
 
 export const PelisDetails = () => {
   const [peliPlay, setPeliPlay] = useState('');
- 
+  
+  
 
   const params = useParams()
 
@@ -24,6 +26,12 @@ useEffect(() => {
 
   }, [])
 
+  const title = datas?.title
+  const description = datas.description
+
+  useSEO({title, description})
+
+ 
 
   /* useEffect(() => {
     !modal && setPeliPlay("");
