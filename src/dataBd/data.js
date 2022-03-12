@@ -28,6 +28,8 @@ import Kingsman from 'img/Kingsman.jpg'
 import TurningRed from 'img/Turning-Red.webp'
 import ProyectorAdams from 'img/ProyectorAdams.jpg'
 import Spiderman from 'img/Spiderman.jpg'
+import warRoom from 'img/warRoom.jpg'
+import TheEqualizer2 from 'img/The-Equalizer-2.webp'
 
 export const data = [
   {
@@ -576,7 +578,7 @@ export const data = [
     years: "2022",
     time: "1h 46min",
     pelisLink: {
-      netu: "https://hqq.to/e/WjZtNTF0dVlDSWNKN1FiTWppZFU2dz09",
+      netu: "https://hqq.to/e/MnlOczdtSVFuQzNTUEJ1cjJZZitmUT09",
       zplayer: "",
     },
     image: ProyectorAdams,
@@ -599,5 +601,43 @@ export const data = [
       zplayer: "",
     },
     image: Spiderman,
+  },
+  {
+    id: 31,
+    title: "Un lugar donde rezar",
+    description:
+      'Una familia aparentemente perfecta busca solucionar sus problemas, con la ayuda de la señorita Clara, una mujer mayor y más sabia.',
+    info: {
+      origialTitle: "War Room",
+      director: "Alex Kendrick",
+      generos: "Drama",
+      actores: "Priscilla C. Shirer, T.C. Stallings, Karen Abercrombie",
+    },
+    years: "2015",
+    time: "2h ",
+    pelisLink: {
+      netu: "https://hqq.to/e/VThsY011dTk2NXhlREtOM1hlb2ltUT09",
+      zplayer: "",
+    },
+    image: warRoom,
+  },
+  {
+    id: 32,
+    title: "The Equalizer 2",
+    description:
+      'Robert McCall imparte una justicia inquebrantable a los explotados y oprimidos, pero eso podría cambiar cuando se trata de un ser amado.',
+    info: {
+      origialTitle: "The Equalizer 2",
+      director: "Antoine Fuqua",
+      generos: "Acción / Crimmen / Suspenso",
+      actores: "Denzel Washington, Pedro Pascal, Ashton Sanders",
+    },
+    years: "2018",
+    time: "2h 1min",
+    pelisLink: {
+      netu: "https://hqq.to/e/eWVkL2xEYVFveStoKzgwRUpMaDZvUT09",
+      zplayer: "",
+    },
+    image: TheEqualizer2,
   },
 ];

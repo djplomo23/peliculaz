@@ -18,11 +18,11 @@ export const Card = ({ pelis}) => {
    const cardOpaciti = useRef(null)
 
    useEffect(() => {
-    CardAnimate.from(cardOpaciti.current, {
-      duration: .8,
+    CardAnimate.fromTo(cardOpaciti.current, {
       scale: 0,
-      opacity: 0
-    });
+      opacity: 0,
+  
+    }, {scale: 1, opacity: 1, duration: .8});
   }, [])
   
   
