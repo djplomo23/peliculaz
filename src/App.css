@@ -3,6 +3,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
+  overflow-x: hidden;
 }
 .app7{
   overflow: hidden;
@@ -294,7 +295,10 @@ img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
   }
+
+  
  
   .detail{
   margin: 0;

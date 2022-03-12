@@ -1,9 +1,11 @@
 
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams  } from "react-router-dom";
 import {data} from 'dataBd/data'
 import { useSEO } from "Hooks/useSEO";
+
+import gsap from 'gsap'
 
 export const PelisDetails = () => {
   const [peliPlay, setPeliPlay] = useState('');
@@ -36,16 +38,68 @@ useEffect(() => {
   /* useEffect(() => {
     !modal && setPeliPlay("");
   }, [modal]);*/
+
+  
+
+  const pelisDetails = gsap.timeline()
+  const detailsImg = useRef(null)
+  const detailsTitle = useRef(null)
+  const detailsDescription = useRef(null)
+  const detailsInfo = useRef(null)
+
+  useEffect(() => {
+
+    pelisDetails.from(detailsImg.current, {
+      duration: .8,
+      //skewX:10,
+      x: -100,
+      opacity: 0
+    })
+  }, [])
+
+  useEffect(() => {
+
+    pelisDetails.from(detailsTitle.current, {
+      duration: .2,
+      //skewX:10,
+      y: -50,
+      opacity: 0
+    })
+  }, [])
+
+  useEffect(() => {
+    pelisDetails.from(detailsDescription.current, {
+      duration: .3,
+      //skewX:10,
+      x: 20,
+      opacity: 0
+    })
+  }, [])
+
+  useEffect(() => {
+    pelisDetails.from(detailsInfo.current, {
+      duration: .3,
+      //skewX:10,
+      y: 20,
+      opacity: 0
+    })
+  }, [])
+  
+  
+  
+
+  
  
-  return ( datas &&
+  return ( datas &&<div>    
+    
     <div  className="container">
       <div className="imgPelis">
-        <img src={datas.image} alt={datas.title} />
+        <img ref={detailsImg} src={datas.image} alt={datas.title} />
       </div>
       <div className="detail">
-        <h1>{datas.title}</h1>
-        <p>{datas.description}</p>
-        <ul>
+        <h1 ref={detailsTitle}>{datas.title}</h1>
+        <p ref={detailsDescription}>{datas.description}</p>
+        <ul ref={detailsInfo}>
           <li>
             <span>Título original</span>
             {datas.info.origialTitle}
@@ -81,7 +135,7 @@ useEffect(() => {
         
       </div>
 
-      <div className="reproductor">
+     <div className="reproductor">
         <div className="btn">
           <button
             className={
@@ -117,9 +171,9 @@ useEffect(() => {
           scrolling="no"
         ></iframe>
       </div>
-            
-      
       
     </div>
+    </div>
+
   );
 };

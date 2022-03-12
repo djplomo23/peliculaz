@@ -1,3 +1,5 @@
+import gsap from "gsap";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 export const Card = ({ pelis}) => {
@@ -10,9 +12,22 @@ export const Card = ({ pelis}) => {
 
 
    const titleEdict = quitarAcentos(pelis.pelis.title)
+
+
+   const CardAnimate = gsap.timeline()
+   const cardOpaciti = useRef(null)
+
+   useEffect(() => {
+    CardAnimate.from(cardOpaciti.current, {
+      duration: .8,
+      scale: 0,
+      opacity: 0
+    });
+  }, [])
   
-  return (
-    <div className="card">
+  
+  return ( pelis &&
+    <div ref={cardOpaciti} className="card">
       <Link to={`/pelicula=${titleEdict}/id=${pelis.pelis.id}`}>
         <img
           loading="lazy"
