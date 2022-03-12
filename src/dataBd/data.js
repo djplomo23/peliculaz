@@ -27,6 +27,7 @@ import ThePirates from 'img/The-Pirates.jpg'
 import Kingsman from 'img/Kingsman.jpg'
 import TurningRed from 'img/Turning-Red.webp'
 import ProyectorAdams from 'img/ProyectorAdams.jpg'
+import Spiderman from 'img/Spiderman.jpg'
 
 export const data = [
   {
@@ -579,5 +580,24 @@ export const data = [
       zplayer: "",
     },
     image: ProyectorAdams,
+  },
+  {
+    id: 30,
+    title: "Spider-Man: No Way Home",
+    description:
+      'Con la identidad de Spider-Man ahora revelada, Peter recurre al Doctor Strange en busca de ayuda. Algo sale mal y el multiverso se convierte en la mayor amenaza. Ahora Peter debe descubrir qué significa realmente ser Spider-Man.',
+    info: {
+      origialTitle: "Spider-Man: No Way Home",
+      director: "Jon Watts",
+      generos: "Acción / Aventura / Fantasía",
+      actores: "Tom Holland, Zendaya, Benedict Cumberbatch",
+    },
+    years: "2021",
+    time: "2h 28min",
+    pelisLink: {
+      netu: "https://hqq.to/e/dmlOUVZjM2NKZkw4aXA0RFVsYlptdz09",
+      zplayer: "",
+    },
+    image: Spiderman,
   },
 ];
