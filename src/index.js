@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOMServer from 'react-dom/server';
+import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOMServer.renderToStaticNodeStream(
+ReactDOM.render(
   <BrowserRouter>
     <App />
   </BrowserRouter>,
