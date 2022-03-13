@@ -9,7 +9,7 @@ export const useSEO = ({title, description}) => {
 
     useEffect(() => {
         const previousTitle = prevTitle.current
-        document.title = `Ver Pelicula de ${title} PELICULAZ.XYZ`
+        document.title = `Ver Pelicula ${title} PELICULAZ.XYZ`
     
       return () => document.title =  previousTitle
     }, [title])
@@ -17,7 +17,7 @@ export const useSEO = ({title, description}) => {
     useEffect(() => {
         const metaDescription = document.querySelector('meta[name="description"]')
         const previousDescription = prevDescription.current
-        description && metaDescription.setAttribute('content', description) 
+        description && metaDescription.setAttribute('content', `Ver ${title} pelicula completa en peliculaz.xyz Online. ${description}`) 
     
       return () =>  metaDescription.setAttribute('content', previousDescription)  
     }, [description])

@@ -626,7 +626,7 @@ export const data = [
   },
   {
     id: 32,
-    title: "The Equalizer 2",
+    title: "El Justiciero 2",
     description:
       'Robert McCall imparte una justicia inquebrantable a los explotados y oprimidos, pero eso podría cambiar cuando se trata de un ser amado.',
     info: {
