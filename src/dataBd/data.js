@@ -1,35 +1,35 @@
-import batman from "img/El caballero oscuro-La leyenda renace.jpg";
-import mision from "img/Mission.Impossible.Ghost.Protocol.2011.jpg";
-import mision2015 from "img/Misión imposible-Nación secreta 2015.jpg";
-import venon from "img/Venom-Habrá matanza 2021.jpg";
-import redNotice from "img/Alerta-roja.jpg";
-import scream from "img/SCREAM-2022-POSTER.jpg";
-import bell from "img/Good Joe Bell 2020.jpg";
-import repit from "img/Sans répit 2022.jpg";
-import duro from "img/duro-de-cuidar-2.jpg";
-import ice from "img/Against-The-Ice-2022.jpg";
-import duro1 from "img/Duro-de-cuidar-1-peliculaz.xyz.jpg";
-import raya from "img/Raya-2021.jpg";
-import agen007 from 'img/Sin tiempo para morir-2021.jpg';
-import spider from 'img/Spider-Man-2018.jpg';
-import ralph from 'img/ralph-2018.jpg';
-import aquaman from 'img/aquaman-2018.png';
-import mind from 'img/THEDARKESTMINDS.jpg'; 
-import bellezaOculta from 'img/belleza-oculta.jpg'
-import blacklight from 'img/Blacklight 2022.jpg'
-import Jordan from 'img/A Journal for Jordan 2021.jpg'
-import Colao from 'img/colao.jpg'
-import cazaFantasma from 'img/cazafantasmas.jpg'
-import alien from 'img/alien-3.jpg'
-import logan from 'img/Logan.png'
-import kingRichard from 'img/King-Richard.jpg'
-import ThePirates from 'img/The-Pirates.jpg'
-import Kingsman from 'img/Kingsman.jpg'
-import TurningRed from 'img/Turning-Red.webp'
-import ProyectorAdams from 'img/ProyectorAdams.jpg'
-import Spiderman from 'img/Spiderman.jpg'
-import warRoom from 'img/warRoom.jpg'
-import TheEqualizer2 from 'img/The-Equalizer-2.webp'
+const batman =  'https://imagenes-peliculaz.s3.amazonaws.com/El+caballero+oscuro-La+leyenda+renace.jpg'
+const mision = "https://imagenes-peliculaz.s3.amazonaws.com/Mission.Impossible.Ghost.Protocol.2011.jpg";
+const mision2015 = "https://imagenes-peliculaz.s3.amazonaws.com/Misi%C3%B3n+imposible-Naci%C3%B3n+secreta+2015.jpg";
+const venon = "https://imagenes-peliculaz.s3.amazonaws.com/Venom-Habr%C3%A1+matanza+2021.jpg";
+const redNotice = "https://imagenes-peliculaz.s3.amazonaws.com/Alerta-roja.jpg";
+const scream = "https://imagenes-peliculaz.s3.amazonaws.com/SCREAM-2022-POSTER.jpg";
+const bell = "https://imagenes-peliculaz.s3.amazonaws.com/Good+Joe+Bell+2020.jpg";
+const repit = "https://imagenes-peliculaz.s3.amazonaws.com/Sans+r%C3%A9pit+2022.jpg";
+const duro = "https://imagenes-peliculaz.s3.amazonaws.com/duro-de-cuidar-2.jpg";
+const ice = "https://imagenes-peliculaz.s3.amazonaws.com/Against-The-Ice-2022.jpg";
+const duro1 = "https://imagenes-peliculaz.s3.amazonaws.com/Duro-de-cuidar-1-peliculaz.xyz.jpg";
+const raya = "https://imagenes-peliculaz.s3.amazonaws.com/Raya-2021.jpg";
+const agen007 = 'https://imagenes-peliculaz.s3.amazonaws.com/Sin+tiempo+para+morir-2021.jpg';
+const spider = 'https://imagenes-peliculaz.s3.amazonaws.com/Spider-Man-2018.jpg';
+const ralph = 'https://imagenes-peliculaz.s3.amazonaws.com/ralph-2018.jpg';
+const aquaman = 'https://imagenes-peliculaz.s3.amazonaws.com/aquaman-2018.png';
+const mind = 'https://imagenes-peliculaz.s3.amazonaws.com/THEDARKESTMINDS.jpg'; 
+const bellezaOculta = 'https://imagenes-peliculaz.s3.amazonaws.com/belleza-oculta.jpg'
+const blacklight = 'https://imagenes-peliculaz.s3.amazonaws.com/Blacklight+2022.jpg'
+const Jordan = 'https://imagenes-peliculaz.s3.amazonaws.com/A+Journal+for+Jordan+2021.jpg'
+const Colao = 'https://imagenes-peliculaz.s3.amazonaws.com/colao.jpg'
+const cazaFantasma = 'https://imagenes-peliculaz.s3.amazonaws.com/cazafantasmas.jpg'
+const alien = 'https://imagenes-peliculaz.s3.amazonaws.com/alien-3.jpg'
+const logan = 'https://imagenes-peliculaz.s3.amazonaws.com/Logan.png'
+const kingRichard = 'https://imagenes-peliculaz.s3.amazonaws.com/King-Richard.jpg'
+const ThePirates = 'https://imagenes-peliculaz.s3.amazonaws.com/The-Pirates.jpg'
+const Kingsman = 'https://imagenes-peliculaz.s3.amazonaws.com/Kingsman.jpg'
+const TurningRed = 'https://imagenes-peliculaz.s3.amazonaws.com/Turning-Red.webp'
+const ProyectorAdams = 'https://imagenes-peliculaz.s3.amazonaws.com/ProyectorAdams.jpg'
+const Spiderman = 'https://imagenes-peliculaz.s3.amazonaws.com/Spiderman.jpg'
+const warRoom = 'https://imagenes-peliculaz.s3.amazonaws.com/warRoom.jpg'
+const TheEqualizer2 = 'https://imagenes-peliculaz.s3.amazonaws.com/The-Equalizer-2.webp'
 
 export const data = [
   {
