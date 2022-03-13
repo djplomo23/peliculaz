@@ -43,11 +43,12 @@ body{
 
 .body{
   min-height: 100vh;
-   margin: 10px;
-   display: flex;
+  margin: 10px;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
+  
   
 }
 
@@ -55,9 +56,10 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 10px;
-  
+
 
 }
+
 
 @keyframes example {
   0% {

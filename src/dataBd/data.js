@@ -30,6 +30,9 @@ const ProyectorAdams = 'https://imagenes-peliculaz.s3.amazonaws.com/ProyectorAda
 const Spiderman = 'https://imagenes-peliculaz.s3.amazonaws.com/Spiderman.webp'
 const warRoom = 'https://imagenes-peliculaz.s3.amazonaws.com/warRoom.webp'
 const TheEqualizer2 = 'https://imagenes-peliculaz.s3.amazonaws.com/The-Equalizer-2.webp'
+const CasateConmigo = 'https://imagenes-peliculaz.s3.amazonaws.com/Casate-conmigo-2022.webp'
+
+
 
 export const data = [
   {
@@ -639,5 +642,24 @@ export const data = [
       zplayer: "",
     },
     image: TheEqualizer2,
+  },
+  {
+    id: 33,
+    title: "Cásate conmigo",
+    description:
+      'Kat Valdez, una superestrella pop es abandonada por Bastian, una estrella de rock, momentos antes de su boda en un concierto en el Madison Square Garden, por lo que ella por revancha se casa con un fanático que escoge entre el público.',
+    info: {
+      origialTitle: "Marry Me",
+      director: "Kat Coiro",
+      generos: "Comedia / Música / Romance",
+      actores: "Jennifer Lopez, Owen Wilson, Maluma",
+    },
+    years: "2022",
+    time: "1h 52min",
+    pelisLink: {
+      netu: "https://hqq.to/e/bnBRbGd6RitQalcvelVYRThKcVFYUT09",
+      zplayer: "",
+    },
+    image: CasateConmigo,
   },
 ];

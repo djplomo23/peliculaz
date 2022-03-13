@@ -92,7 +92,8 @@ useEffect(() => {
  
   return ( datas &&<div>    
     
-    <div  className="container">
+    <div  className="container"  >
+
       <div className="imgPelis">
         <img ref={detailsImg} src={datas.image} alt={datas.title} />
       </div>
@@ -126,15 +127,15 @@ useEffect(() => {
           </li>
         </ul>
       </div>
-
+      </div>
       <div className="warnning">
         <p>
           <span>WARNNING!!!</span> No necesitas descargar nada para visualizar
           las películas
         </p>
         
+  
       </div>
-
      <div className="reproductor">
         <div className="btn">
           <button
@@ -172,7 +173,7 @@ useEffect(() => {
         ></iframe>
       </div>
       
-    </div>
+    
     </div>
 
   );

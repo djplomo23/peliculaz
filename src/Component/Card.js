@@ -13,16 +13,30 @@ export const Card = ({ pelis}) => {
 
    const titleEdict = quitarAcentos(pelis.pelis.title)
 
-
-   const CardAnimate = gsap.timeline()
+   
+   
    const cardOpaciti = useRef(null)
+   let CardAnimate
+  
+   useEffect(() => {
+     CardAnimate = gsap.timeline({defaults: {
+      duration: 2.5, 
+      ease: "elastic.out(1, 0.3)"
+    }})
+  }, [])
+
 
    useEffect(() => {
-    CardAnimate.fromTo(cardOpaciti.current, {
-      scale: 0,
-      opacity: 0,
-  
-    }, {scale: 1, opacity: 1, duration: .8});
+   
+    CardAnimate.set(cardOpaciti.current, {
+      scale: 0.0000001,
+      
+    });
+    
+    CardAnimate.to(cardOpaciti.current, {
+      scale: 1,
+      
+    }, "<");
   }, [])
   
   
