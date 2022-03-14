@@ -10,6 +10,7 @@ import { AllPelis } from "Screen/AllPelis";
 
 
 function App() {
+  
   const [seachBox, setSeachBox] = useState("");
 
   /* const nextPage = () => {

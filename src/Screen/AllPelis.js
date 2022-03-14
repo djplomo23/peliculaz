@@ -7,18 +7,22 @@ export const AllPelis = ({seachBoxAll}) => {
 
     useEffect(() => {
       setSeachBox(seachBoxAll)
+      
     }, [seachBoxAll])
+
+ 
+
+   const datas = data?.filter(
+    (pelis) =>
+      pelis.title.toUpperCase().includes(seachBox.toUpperCase()) ||
+      pelis.description.toUpperCase().includes(seachBox.toUpperCase()) ||
+      pelis.info.origialTitle.toUpperCase().includes(seachBox.toUpperCase())
+  )
+
     
 
-    const datas = data?.filter(
-        (pelis) =>
-          pelis.title.toUpperCase().includes(seachBox.toUpperCase()) ||
-          pelis.description.toUpperCase().includes(seachBox.toUpperCase()) ||
-          pelis.info.origialTitle.toUpperCase().includes(seachBox.toUpperCase())
-      );
-
   return (
-    datas.map((pelis, i) => (
+    datas?.map((pelis, i) => (
       <Card
         key={pelis.id}
         pelis={{ pelis, i }}

@@ -9,7 +9,7 @@ export const useSEO = ({title, description}) => {
 
     useEffect(() => {
         const previousTitle = prevTitle.current
-        document.title = `Ver Pelicula ${title} PELICULAZ.XYZ`
+        document.title = `Ver Pelicula --> ${title} PELICULAZ.XYZ`
     
       return () => document.title =  previousTitle
     }, [title])
