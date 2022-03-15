@@ -31,6 +31,8 @@ const Spiderman = 'https://imagenes-peliculaz.s3.amazonaws.com/Spiderman.webp'
 const warRoom = 'https://imagenes-peliculaz.s3.amazonaws.com/warRoom.webp'
 const TheEqualizer2 = 'https://imagenes-peliculaz.s3.amazonaws.com/The-Equalizer-2.webp'
 const CasateConmigo = 'https://imagenes-peliculaz.s3.amazonaws.com/Casate-conmigo-2022.webp'
+const HeraDelHielo = 'https://imagenes-peliculaz.s3.amazonaws.com/The-Ice-Age-2022.webp'
+const RapidoyFuriosos9 = 'https://imagenes-peliculaz.s3.amazonaws.com/Rapidos_y_furiosos_9_2021.webp'
 
 
 
@@ -661,5 +663,43 @@ export const data = [
       zplayer: "",
     },
     image: CasateConmigo,
+  },
+  {
+    id: 34,
+    title: "La Era Del Hielo: Las aventuras de Buck",
+    description:
+      'La intrépida comadreja tuerta Buck se une a los traviesos hermanos zarigüeya Crash y Eddie en una nueva aventura en el hogar de Buck: el mundo de los dinosaurios.',
+    info: {
+      origialTitle: "The Ice Age Adventures of Buck Wild",
+      director: "John C. Donkin",
+      generos: "Comedia / Animación / Aventura",
+      actores: "Utkarsh Ambudkar(voz), Sean Kenin(voz), Jake Green(voz)",
+    },
+    years: "2022",
+    time: "1h 22min",
+    pelisLink: {
+      netu: "https://hqq.to/e/SGwzbGpWZUVITUtBRHFtaDI2QWFodz09",
+      zplayer: "",
+    },
+    image: HeraDelHielo,
+  },
+  {
+    id: 35,
+    title: "Rapidos y Furiosos 9",
+    description:
+      'Dom y su equipo se enfrentan a un terrorista internacional que resulta ser el hermano de Dom y Mia, con el que no tienen relación.',
+    info: {
+      origialTitle: "Fast & Furious 9",
+      director: "Justin Lin",
+      generos: "Acción / Crimen / Suspenso",
+      actores: "Vin Diesel, Michelle Rodriguez, Jordana Brewster",
+    },
+    years: "2021",
+    time: "2h 23min",
+    pelisLink: {
+      netu: "https://hqq.to/e/Y1BPZWJ1WE5sRlBlcEpGZ25BVGVGQT09",
+      zplayer: "",
+    },
+    image: RapidoyFuriosos9,
   },
 ];
