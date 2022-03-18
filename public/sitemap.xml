@@ -9,41 +9,147 @@
 
 <url>
   <loc>https://www.peliculaz.xyz/</loc>
+  <priority>1</priority>
+</url>
+<url>
   <loc>https://www.peliculaz.xyz/pelicula=Rapidos-y-Furiosos-9/id=35</loc> 
+    <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.peliculaz.xyz/pelicula=La-Era-Del-Hielo-Las-aventuras-de-Buck/id=34</loc> 
+<url>
   <loc>https://www.peliculaz.xyz/pelicula=Casate-conmigo/id=33</loc> 
+  <priority>0.80</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=The-Equalizer-2/id=32</loc> 
+  <priority>0.80</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Un-lugar-donde-rezar/id=31</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Spider-Man-No-Way-Home/id=30</loc> 
+  <priority>1</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=El-proyecto-Adam/id=29</loc>
+  <priority>0.80</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Volviendose-Rojo/id=28</loc>
+  <priority>0.80</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Kingsman-Servicio-secreto/id=27</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Piratas-El-ultimo-tesoro-de-la-corona/id=26</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=El-metodo-Williams/id=25</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Logan/id=24</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Alien³/id=23</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Cazafantasmas-Mas-alla/id=22</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Colao/id=21</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Un-diario-para-Jordan/id=20</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Blacklight/id=19</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Belleza-oculta/id=18</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Aquaman/id=17</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Ralph-rompe-Internet/id=16</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Spider-Man:-Un-nuevo-universo/id=15</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Mentes-poderosas/id=14</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Sin-tiempo-para-morir/id=13</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Raya-y-el-ultimo-dragon/id=12</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Perdidos-en-el-Artico/id=11</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Duro-de-cuidar-2/id=10</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Duro-de-cuidar/id=9</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Sin-respiro/id=8</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Good-Joe-Bell/id=7</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Scream-5/id=6</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Alerta-roja/id=5</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Venom-Habra-matanza/id=4</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Mision-imposible-Nacion-secreta/id=3</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=Mision-Imposible-Protocolo-fantasma/id=2</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <loc>https://www.peliculaz.xyz/pelicula=El-caballero-oscuro:-La-leyenda-renace/id=1</loc>
+  <priority>0.60</priority>
+</url>
+  <url>
   <lastmod>2022-03-13T17:20:46+00:00</lastmod>
 </url>
 
