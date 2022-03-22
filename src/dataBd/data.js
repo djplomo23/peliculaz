@@ -33,6 +33,10 @@ const TheEqualizer2 = 'https://imagenes-peliculaz.s3.amazonaws.com/The-Equalizer
 const CasateConmigo = 'https://imagenes-peliculaz.s3.amazonaws.com/Casate-conmigo-2022.webp'
 const HeraDelHielo = 'https://imagenes-peliculaz.s3.amazonaws.com/The-Ice-Age-2022.webp'
 const RapidoyFuriosos9 = 'https://imagenes-peliculaz.s3.amazonaws.com/Rapidos_y_furiosos_9_2021.webp'
+const baywatch = 'https://imagenes-peliculaz.s3.amazonaws.com/bay-watch.webp'
+const encanto = 'https://imagenes-peliculaz.s3.amazonaws.com/encanto.webp'
+const increible2 = 'https://imagenes-peliculaz.s3.amazonaws.com/increibles-2.webp'
+const without = 'https://imagenes-peliculaz.s3.amazonaws.com/without-saying-goobye.webp'
 
 
 
@@ -701,5 +705,63 @@ export const data = [
       zplayer: "",
     },
     image: RapidoyFuriosos9,
+  },
+  {
+    id: 37,
+    title: "Los Increíbles 2",
+    description:
+      'Los Increíbles asumen una nueva misión que implica un cambio de roles familiares, Mr. Increíble se encargará de la casa mientras su esposa Elastigirl salva al mundo.',
+    info: {
+      origialTitle: "Incredibles 2",
+      director: "Brad Bird",
+      generos: "Acción / Acción / Aventura",
+      actores: "Craig T. Nelson(voz), Holly Hunter(voz), Sarah Vowell(voz)",
+    },
+    years: "2018",
+    time: "1h 58min",
+    pelisLink: {
+      netu: "https://hqq.to/e/T2d3Y213d1JmcXpEcU4rQ2MvaCt1QT09",
+      zplayer: "",
+    },
+    image: increible2,
+  },
+
+  {
+    id: 38,
+    title: "Hasta que nos volvamos a encontrar",
+    description:
+      'Las vidas opuestas de un arquitecto adicto al trabajo y una artista entusiasta dan un vuelco cuando se conocen en Perú y cambian sus perspectivas.',
+    info: {
+      origialTitle: "Hasta que nos volvamos a encontrar",
+      director: "Bruno Ascenzo",
+      generos: "Comedia / Romance",
+      actores: "Maxi Iglesias, Stephanie Cayo, Carlos Carlín",
+    },
+    years: "2022",
+    time: "1h 36min",
+    pelisLink: {
+      netu: "https://hqq.to/e/aFBzQ0o5OTVMUHk5TEN0ZFkyS0hHUT09",
+      zplayer: "",
+    },
+    image: without,
+  },
+  {
+    id: 39,
+    title: "Encanto",
+    description:
+      'En Colombia, una joven lidia con la frustración de ser la única miembro de la familia que no tiene poderes mágicos.',
+    info: {
+      origialTitle: "Encanto",
+      director: "Jared BushByron, HowardCharise, Castro Smith(co-directed by)",
+      generos: "Animación / Comedia / Familiar",
+      actores: "Stephanie Beatriz(voz), María Cecilia Botero(voz), John Leguizamo(voz)",
+    },
+    years: "2021",
+    time: "1h 42min",
+    pelisLink: {
+      netu: "https://hqq.to/e/b08rYnBYRnQzWjdGaGMwU1VObGZIdz09",
+      zplayer: "",
+    },
+    image: encanto,
   },
 ];
