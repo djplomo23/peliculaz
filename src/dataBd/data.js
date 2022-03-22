@@ -707,6 +707,25 @@ export const data = [
     image: RapidoyFuriosos9,
   },
   {
+    id: 36,
+    title: "Baywatch: Los vigilantes de la playa",
+    description:
+      'El devoto socorrista Mitch Buchannon se enfrenta a un impetuoso nuevo recluta, mientras descubren una trama criminal que amenaza el futuro de la bahía.',
+    info: {
+      origialTitle: "Baywatch",
+      director: "Seth Gordon",
+      generos: "Acción / Comedia / Crimen",
+      actores: "Dwayne Johnson, Zac Efron, Alexandra Daddario",
+    },
+    years: "2017",
+    time: "1h 56min",
+    pelisLink: {
+      netu: "https://hqq.to/e/dVdlTU90NnlBNVRMdHF2SVllL1VDdz09",
+      zplayer: "",
+    },
+    image: baywatch,
+  },
+  {
     id: 37,
     title: "Los Increíbles 2",
     description:
