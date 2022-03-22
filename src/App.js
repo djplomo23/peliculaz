@@ -7,6 +7,7 @@ import logo from "img/peliculaZ-logo.png";
 
 import { Footer } from "Component/Footer";
 import { AllPelis } from "Screen/AllPelis";
+import { Error404 } from "Component/Error404";
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Routes>
           <Route path="/" element={<AllPelis seachBoxAll={seachBox} />} />
          <Route path="/pelicula=:title/id=:id" element={<PelisDetails />} />
+         <Route path="*" element={<Error404 />} />
         </Routes>
 
         {/*datas
