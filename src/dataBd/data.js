@@ -37,6 +37,7 @@ const baywatch = 'https://imagenes-peliculaz.s3.amazonaws.com/bay-watch.webp'
 const encanto = 'https://imagenes-peliculaz.s3.amazonaws.com/encanto.webp'
 const increible2 = 'https://imagenes-peliculaz.s3.amazonaws.com/increibles-2.webp'
 const without = 'https://imagenes-peliculaz.s3.amazonaws.com/without-saying-goobye.webp'
+const doctor1 = 'https://imagenes-peliculaz.s3.amazonaws.com/Doctor-stranger-1.webp'
 
 
 
@@ -771,7 +772,7 @@ export const data = [
       'En Colombia, una joven lidia con la frustración de ser la única miembro de la familia que no tiene poderes mágicos.',
     info: {
       origialTitle: "Encanto",
-      director: "Jared BushByron, HowardCharise, Castro Smith(co-directed by)",
+      director: "Jared BushByron, Howard Charise, Castro Smith(co-directed by)",
       generos: "Animación / Comedia / Familiar",
       actores: "Stephanie Beatriz(voz), María Cecilia Botero(voz), John Leguizamo(voz)",
     },
@@ -782,5 +783,24 @@ export const data = [
       zplayer: "",
     },
     image: encanto,
+  },
+  {
+    id: 40,
+    title: "Doctor Strange (Doctor Extraño)",
+    description:
+      'Durante un viaje de curación física y espiritual, un brillante neurocirujano se adentra en el mundo de las artes místicas.',
+    info: {
+      origialTitle: "Doctor Strange",
+      director: "Scott Derrickson",
+      generos: "Acción / Aventura / Fantasía",
+      actores: "Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams",
+    },
+    years: "2016",
+    time: "1h 55min",
+    pelisLink: {
+      netu: "https://hqq.to/e/b08rYnBYRnQzWjdGaGMwU1VObGZIdz09",
+      zplayer: "",
+    },
+    image: doctor1,
   },
 ];
