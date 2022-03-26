@@ -798,7 +798,7 @@ export const data = [
     years: "2016",
     time: "1h 55min",
     pelisLink: {
-      netu: "https://hqq.to/e/b08rYnBYRnQzWjdGaGMwU1VObGZIdz09",
+      netu: "https://hqq.to/e/bE56NGV3Qk5yQnJjVGVKY044a1FjQT09",
       zplayer: "",
     },
     image: doctor1,
