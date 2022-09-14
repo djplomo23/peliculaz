@@ -56,7 +56,7 @@ export const data = [
     years: "2012",
     time: "2h 44min",
     pelisLink: {
-      netu: "https://hqq.to/e/VXh4cVpaKzV6S0oyREVKMWJFV0Fpdz09",
+      netu: "https://hqq.to/e/UStTTTBaMzVuaTJIay9CVnBvUXZaQT09",
       zplayer: "https://v2.zplayer.live/embed/d8v0uoncarv6",
     },
     image: batman,
@@ -75,8 +75,8 @@ export const data = [
     years: "2011",
     time: "2h 12min",
     pelisLink: {
-      netu: "https://hqq.to/e/ZEQyUGw4SXlDNlNoVkZ3c1NmY3JRUT09",
-      zplayer: "https://v2.zplayer.live/embed/5noc1yej53ze",
+      netu: "https://hqq.to/e/WUNseVlYZ0RXQmN5NXlVTDFrQlVqZz09",
+      zplayer: "",
     },
     image: mision,
   },
@@ -94,8 +94,8 @@ export const data = [
     years: "2015",
     time: "2h 11min",
     pelisLink: {
-      netu: "https://hqq.to/e/N1lQTEdPZGN4MzVPWFlCWUlPTmNPZz09",
-      zplayer: "https://v2.zplayer.live/embed/2lxxjfn90zav",
+      netu: "https://hqq.to/e/MGE5dnJZZ1VydGt3cm1kazBtTFI2QT09",
+      zplayer: "",
     },
     image: mision2015,
   },
@@ -113,8 +113,8 @@ export const data = [
     years: "2021",
     time: "1h 37min",
     pelisLink: {
-      netu: "https://hqq.to/e/YjUwSnJEVmFaRlh6ZEdndHRwZDBhUT09",
-      zplayer: "https://v2.zplayer.live/embed/h31xn4pq8bag",
+      netu: "https://hqq.to/e/ZnVFODBNZmlFTGJ3dzQ3L29IRlZPdz09",
+      zplayer: "",
     },
     image: venon,
   },
@@ -132,8 +132,8 @@ export const data = [
     years: "2021",
     time: "1h 58min",
     pelisLink: {
-      netu: "https://hqq.to/e/d2JXVWF0T3h2eUhFdnI4YnlVU29KUT09",
-      zplayer: "https://v2.zplayer.live/embed/0leq9mhrgic2",
+      netu: "https://hqq.to/e/cXdWTFM1ZkZBWHRRNUtjbFFhcFpmZz09",
+      zplayer: "",
     },
     image: redNotice,
   },
@@ -151,8 +151,8 @@ export const data = [
     years: "2022",
     time: "1h 54min",
     pelisLink: {
-      netu: "https://hqq.to/e/bjE3MlBvczBneVRGTnl6ZzVIY0RPUT09",
-      zplayer: "https://v2.zplayer.live/embed/etvtgnwxiwhd",
+      netu: "https://hqq.to/e/OUNCNnBFVnQ2MUFNZGhIYllkenRxUT09",
+      zplayer: "",
     },
     image: scream,
   },
@@ -170,8 +170,8 @@ export const data = [
     years: "2020",
     time: "1h 34min",
     pelisLink: {
-      netu: "https://hqq.to/e/Rk5PRnhYeElheEp1bHc1YWMwTTdGZz09",
-      zplayer: "https://v2.zplayer.live/embed/xvbqwy9mkel4",
+      netu: "https://hqq.to/e/dTB4R2F3ZjAyYVEvbTRJemNHc1lVdz09",
+      zplayer: "",
     },
     image: bell,
   },
@@ -189,8 +189,8 @@ export const data = [
     years: "2022",
     time: "1h 35min",
     pelisLink: {
-      netu: "https://hqq.to/e/MkxJVnp1ZCtaajlaVFJad0dJSUJUdz09",
-      zplayer: "https://v2.zplayer.live/embed/6goco183nri5",
+      netu: "https://hqq.to/e/TFFoUFcxaE05SDNZNklqRFdOQnQ1QT09",
+      zplayer: "",
     },
     image: repit,
   },
@@ -208,7 +208,7 @@ export const data = [
     years: "2017",
     time: "1h 58min",
     pelisLink: {
-      netu: "https://hqq.to/e/TmY2ZkZWRjdZeUZWTUwwalV4c3FSUT09",
+      netu: "https://hqq.to/e/V21aTDlxNUZBWTdtR0t4QW84dHA2dz09",
       zplayer: "",
     },
     image: duro1,
@@ -227,7 +227,7 @@ export const data = [
     years: "2021",
     time: "1h 40min",
     pelisLink: {
-      netu: "https://hqq.to/e/NDZwNi90OG1MM1Z3Y0NtcWUrc20yZz09",
+      netu: "https://hqq.to/e/dG8zZFhmVE9GTU8xcWJSKzRkOTVEUT09",
       zplayer: "",
     },
     image: duro,
@@ -246,7 +246,7 @@ export const data = [
     years: "2022",
     time: "1h 42min",
     pelisLink: {
-      netu: "https://hqq.to/e/bHdPRC92N3JFa1plM1pZTUpRaE41QT09",
+      netu: "https://hqq.to/e/OXRiNHQzZWUvQWwxRDQ1UjF2NkhLZz09",
       zplayer: "",
     },
     image: ice,
@@ -265,7 +265,7 @@ export const data = [
     years: "2021",
     time: "1h 47min",
     pelisLink: {
-      netu: "https://hqq.to/e/S1JuNlZVRUZSTk5DWUdJRmFOWmg2dz09",
+      netu: "https://hqq.to/e/bVpDVWVtdTZvWWZKTkEvTFRkakR2QT09",
       zplayer: "",
     },
     image: raya,
@@ -284,7 +284,7 @@ export const data = [
     years: "2021",
     time: "2h 43min",
     pelisLink: {
-      netu: "https://hqq.to/e/dFlWSFlzMEZiOWJJRDFTZUp5aDRkQT09",
+      netu: "https://hqq.to/e/Umh2MkJ1NjJuVzNVbFErTmo1WEN1dz09",
       zplayer: "",
     },
     image: agen007,
@@ -303,7 +303,7 @@ export const data = [
     years: "2018",
     time: "1h 44min",
     pelisLink: {
-      netu: "https://hqq.to/e/MnZkVndCdlBUQmI1Zkx4elNralUydz09",
+      netu: "https://hqq.to/e/Q3Rza3FRUVMyVVhjTnRiNGZ3U0VUdz09",
       zplayer: "",
     },
     image: mind,
@@ -322,7 +322,7 @@ export const data = [
     years: "2018",
     time: "1h 57min",
     pelisLink: {
-      netu: "https://hqq.to/e/RWs3RTh6ZHFUSUlGdTN0NEczRWYxUT09",
+      netu: "https://hqq.to/e/cU1KbGwxMGRGYTRxZHh1amMzNUl3QT09",
       zplayer: "",
     },
     image: spider,
@@ -341,7 +341,7 @@ export const data = [
     years: "2018",
     time: "1h 52min",
     pelisLink: {
-      netu: "https://hqq.to/e/aStDaC9kNnAxSE9ldEV4OTBndytFUT09",
+      netu: "https://hqq.to/e/WFBYbzlTNDFRZG5pSnVSOHR2QlNPQT09",
       zplayer: "",
     },
     image: ralph,
@@ -360,7 +360,7 @@ export const data = [
     years: "2018",
     time: "2h 23min",
     pelisLink: {
-      netu: "https://hqq.to/e/U0d1RkRSOWdzTjhiWmFPTW1DamN4QT09",
+      netu: "https://hqq.to/e/bXJaNVA4RWJkWFhlcWNTWlpWZ2dNdz09",
       zplayer: "",
     },
     image: aquaman,
@@ -379,7 +379,7 @@ export const data = [
     years: "2016",
     time: "1h 37min",
     pelisLink: {
-      netu: "https://hqq.to/e/N2Y3SmFvRDNJOUo2WUxtRkRGWHZsdz09",
+      netu: "https://hqq.to/e/MDcxWkNndDNxdlcvalZWSTcySS9wQT09",
       zplayer: "",
     },
     image: bellezaOculta,
@@ -417,7 +417,7 @@ export const data = [
     years: "2021",
     time: "2h 11min",
     pelisLink: {
-      netu: "https://hqq.to/e/OGozQXg1bVNpc0JVM0F6Wnd5dDVxZz09",
+      netu: "https://hqq.to/e/K3dBenVHTnlTSlNLWnF2eUJ5YnRsQT09",
       zplayer: "",
     },
     image: Jordan,
@@ -436,8 +436,8 @@ export const data = [
     years: "2017",
     time: "1h 28min",
     pelisLink: {
-      netu: "https://hqq.to/e/bXFLdGcxLzVKdW92RUs0eWlHSFpmQT09",
-      zplayer: "https://v2.zplayer.live/embed/88m1v09qxknk",
+      netu: "https://hqq.to/e/cko1VjNOQzNMTE4veDZ5K0N3eFpIQT09",
+      zplayer: "",
     },
     image: Colao,
   },
@@ -455,7 +455,7 @@ export const data = [
     years: "2021",
     time: "2h 4min",
     pelisLink: {
-      netu: "https://hqq.to/e/cHczbnpuakRDdmFMQ3FJbmpqWDVtQT09",
+      netu: "https://hqq.to/e/ZndnVTMvUjVHRHMySCtpejhVSGVNQT09",
       zplayer: "",
     },
     image: cazaFantasma,
@@ -474,7 +474,7 @@ export const data = [
     years: "1992",
     time: "1h 54min",
     pelisLink: {
-      netu: "https://hqq.to/e/SlAydVlJOFlWbFY0YVVkalZaZjZtUT09",
+      netu: "https://hqq.to/e/bjdsQVNNTHJybk1TL2w3UWd6by9aUT09",
       zplayer: "",
     },
     image: alien,
@@ -493,7 +493,7 @@ export const data = [
     years: "2017",
     time: "2h 17min",
     pelisLink: {
-      netu: "https://hqq.to/e/SitETjlCeXpCQWgxaEtiQXRQZTljZz09",
+      netu: "https://hqq.to/e/ZHdaMVJQTlJpSkFlYVdxZGNmU1dzQT09",
       zplayer: "",
     },
     image: logan,
@@ -512,7 +512,7 @@ export const data = [
     years: "2021",
     time: "2h 24min",
     pelisLink: {
-      netu: "https://hqq.to/e/alpNZXBYR2RMQ0NFaUN6NWFUb1ladz09",
+      netu: "https://hqq.to/e/R3FycWlIRjdDWVpJYUprbUlQSFpuUT09",
       zplayer: "",
     },
     image: kingRichard,
@@ -531,7 +531,7 @@ export const data = [
     years: "2022",
     time: "2h 6min",
     pelisLink: {
-      netu: "https://hqq.to/e/bXpSSHlwb3dKcUZLU2hPS1JaWjI0UT09",
+      netu: "https://hqq.to/e/YkRUSG1VdDJlQWI1eDhxQnBlQy9hZz09",
       zplayer: "",
     },
     image: ThePirates,
@@ -550,7 +550,7 @@ export const data = [
     years: "2014",
     time: "2h 9min",
     pelisLink: {
-      netu: "https://hqq.to/e/eThrYWNPQnlHZHVQa2dTM09lQVg1UT09",
+      netu: "https://hqq.to/e/bEw4dnd6YTFMU0Zyd25FY2tGc1BmZz09",
       zplayer: "",
     },
     image: Kingsman,
@@ -569,7 +569,7 @@ export const data = [
     years: "2022",
     time: "1h 40min",
     pelisLink: {
-      netu: "https://hqq.to/e/UjF0YjF5WnJCQVlZWTlSK0ZWVGh5QT09",
+      netu: "https://hqq.to/e/YUorTUZkdzMxMHVZV1AzN0tEaGdmdz09",
       zplayer: "",
     },
     image: TurningRed,
@@ -588,7 +588,7 @@ export const data = [
     years: "2022",
     time: "1h 46min",
     pelisLink: {
-      netu: "https://hqq.to/e/MnlOczdtSVFuQzNTUEJ1cjJZZitmUT09",
+      netu: "https://hqq.to/e/QXQvNkJJaDRMMy82MVU2OXBwUThEQT09",
       zplayer: "",
     },
     image: ProyectorAdams,
@@ -607,7 +607,7 @@ export const data = [
     years: "2021",
     time: "2h 28min",
     pelisLink: {
-      netu: "https://hqq.to/e/dmlOUVZjM2NKZkw4aXA0RFVsYlptdz09",
+      netu: "https://hqq.to/e/ZGVMallMWkVuVXdUZmV0QnZqZDE0UT09",
       zplayer: "",
     },
     image: Spiderman,
@@ -626,7 +626,7 @@ export const data = [
     years: "2015",
     time: "2h ",
     pelisLink: {
-      netu: "https://hqq.to/e/VThsY011dTk2NXhlREtOM1hlb2ltUT09",
+      netu: "https://hqq.to/e/bElxM0Qwa1hoN0hyVUVtbEZ5ZWpFQT09",
       zplayer: "",
     },
     image: warRoom,
@@ -645,7 +645,7 @@ export const data = [
     years: "2018",
     time: "2h 1min",
     pelisLink: {
-      netu: "https://hqq.to/e/eWVkL2xEYVFveStoKzgwRUpMaDZvUT09",
+      netu: "https://hqq.to/e/dG8zZFhmVE9GTU8xcWJSKzRkOTVEUT09",
       zplayer: "",
     },
     image: TheEqualizer2,
@@ -664,7 +664,7 @@ export const data = [
     years: "2022",
     time: "1h 52min",
     pelisLink: {
-      netu: "https://hqq.to/e/bnBRbGd6RitQalcvelVYRThKcVFYUT09",
+      netu: "https://hqq.to/e/Yk0vbzhpSStXVWxFY3ZZZktMQkJlQT09",
       zplayer: "",
     },
     image: CasateConmigo,
@@ -683,7 +683,7 @@ export const data = [
     years: "2022",
     time: "1h 22min",
     pelisLink: {
-      netu: "https://hqq.to/e/SGwzbGpWZUVITUtBRHFtaDI2QWFodz09",
+      netu: "https://hqq.to/e/REV6VXBlVlFKQ0FiVmxDbnJYc0tVUT09",
       zplayer: "",
     },
     image: HeraDelHielo,
@@ -702,7 +702,7 @@ export const data = [
     years: "2021",
     time: "2h 23min",
     pelisLink: {
-      netu: "https://hqq.to/e/Y1BPZWJ1WE5sRlBlcEpGZ25BVGVGQT09",
+      netu: "https://hqq.to/e/aFVRaThrc0l6UEtoSUJ6TnlsVlMzUT09",
       zplayer: "",
     },
     image: RapidoyFuriosos9,
@@ -721,7 +721,7 @@ export const data = [
     years: "2017",
     time: "1h 56min",
     pelisLink: {
-      netu: "https://hqq.to/e/dVdlTU90NnlBNVRMdHF2SVllL1VDdz09",
+      netu: "https://hqq.to/e/dWthbEF3UlBHeG02N3dTNC9CbVovQT09",
       zplayer: "",
     },
     image: baywatch,
@@ -740,7 +740,7 @@ export const data = [
     years: "2018",
     time: "1h 58min",
     pelisLink: {
-      netu: "https://hqq.to/e/T2d3Y213d1JmcXpEcU4rQ2MvaCt1QT09",
+      netu: "https://hqq.to/e/eHhuRXMyS0lJVFRNYXZzTnl1dDh2Zz09",
       zplayer: "",
     },
     image: increible2,
@@ -760,7 +760,7 @@ export const data = [
     years: "2022",
     time: "1h 36min",
     pelisLink: {
-      netu: "https://hqq.to/e/aFBzQ0o5OTVMUHk5TEN0ZFkyS0hHUT09",
+      netu: "https://hqq.to/e/UDNhQnI4YlhDdVBySCtXQ3BSRTgyQT09",
       zplayer: "",
     },
     image: without,
@@ -779,7 +779,7 @@ export const data = [
     years: "2021",
     time: "1h 42min",
     pelisLink: {
-      netu: "https://hqq.to/e/b08rYnBYRnQzWjdGaGMwU1VObGZIdz09",
+      netu: "https://hqq.to/e/S2xSbUQrSVFJY3FhOFc3dmZZVVgxZz09",
       zplayer: "",
     },
     image: encanto,
@@ -798,7 +798,7 @@ export const data = [
     years: "2016",
     time: "1h 55min",
     pelisLink: {
-      netu: "https://hqq.to/e/bE56NGV3Qk5yQnJjVGVKY044a1FjQT09",
+      netu: "https://hqq.to/e/UVNmSkxiVm83U3BUSE5HSUJ3TkFNUT09",
       zplayer: "",
     },
     image: doctor1,
