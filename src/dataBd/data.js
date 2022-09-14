@@ -38,6 +38,11 @@ const encanto = 'https://imagenes-peliculaz.s3.amazonaws.com/encanto.webp'
 const increible2 = 'https://imagenes-peliculaz.s3.amazonaws.com/increibles-2.webp'
 const without = 'https://imagenes-peliculaz.s3.amazonaws.com/without-saying-goobye.webp'
 const doctor1 = 'https://imagenes-peliculaz.s3.amazonaws.com/Doctor-stranger-1.webp'
+const ThorLove = 'https://imagenes-peliculaz.s3.amazonaws.com/Thor-Love-And-Thunder.webp'
+const BulletTrain = 'https://imagenes-peliculaz.s3.amazonaws.com/Bullet-Train.webp'
+const Pinocho = 'https://imagenes-peliculaz.s3.amazonaws.com/Pinocho.webp'
+const TopGunM = 'https://imagenes-peliculaz.s3.amazonaws.com/Top-Gun-Maverick.webp'
+const DragonBallSuper = 'https://imagenes-peliculaz.s3.amazonaws.com/Dragon-Super-Hero.webp'
 
 
 
@@ -802,5 +807,105 @@ export const data = [
       zplayer: "",
     },
     image: doctor1,
+  },
+  {
+    id: 41,
+    title: "THOR AMOR Y TRUENO",
+    description:
+      'Thor reclama la ayuda de Valquiria, Korg y su exnovia Jane Foster para luchar contra Gorr el Dios Carnicero, que pretende extinguir a los dioses.',
+    info: {
+      origialTitle: "Thor: Love and Thunder",
+      director: "Taika Waititi",
+      generos: "Acción / Aventura / Comedia",
+      actores: "Chris Hemsworth, Natalie Portman, Christian Bale",
+    },
+    years: "2022",
+    time: "1h 58min",
+    pelisLink: {
+      netu: "https://hqq.to/e/SFF6QzFRZEpLeTBpemRoVzZGODZRQT09",
+      zplayer: "",
+    },
+    image: ThorLove
+    ,
+  },
+  {
+    id: 42,
+    title: "Bullet Train",
+    description:
+      'Cinco asesinos a sueldo se encuentran a bordo de un tren bala que viaja de Tokio a Morioka con unas pocas paradas intermedias. La pregunta es quién saldrá vivo del tren y qué les espera en la estación final.',
+    info: {
+      origialTitle: "Bullet Train",
+      director: "David Leitch",
+      generos: "Acción / Comedia / Suspenso",
+      actores: "Brad Pitt, Joey King, Aaron Taylor-Johnson",
+    },
+    years: "2022",
+    time: "2h 7min",
+    pelisLink: {
+      netu: "https://hqq.to/e/SHRqYmVtUVJMVXBDdlZlTDlqOFdwUT09",
+      zplayer: "",
+    },
+    image: BulletTrain
+    ,
+  },
+  {
+    id: 43,
+    title: "Top Gun: Maverick",
+    description:
+      'Después de más de treinta años de servicio como uno de los mejores aviadores de la Armada, Pete Mitchell está donde pertenece, forzando los límites como valiente piloto de pruebas y esquivando el avance de rango que lo dejaría en tierra.',
+    info: {
+      origialTitle: "Top Gun: Maverick",
+      director: "Joseph Kosinski",
+      generos: "Acción / Drama",
+      actores: "Tom Cruise, Jennifer Connelly, Miles Teller",
+    },
+    years: "2022",
+    time: "2h 10min",
+    pelisLink: {
+      netu: "https://hqq.to/e/TWZ6TWZQdVhvUVMyaEI5U25Ka1ZqQT09",
+      zplayer: "",
+    },
+    image: TopGunM
+    ,
+  },
+  {
+    id: 44,
+    title: "Dragon Ball Super: Super Hero",
+    description:
+      'El Ejército de la Cinta Roja del pasado de Goku ha regresado con dos nuevos androides para desafiarlo a él y a sus amigos.',
+    info: {
+      origialTitle: "Dragon Ball Super: Super Hero",
+      director: "Tetsuro Kodama",
+      generos: " Animación / Acción / Aventura",
+      actores: "Masako Nozawa(voz), Toshio Furukawa(voz), Yûko Minaguchi(voz)",
+    },
+    years: "2022",
+    time: "1h 40min",
+    pelisLink: {
+      netu: "https://hqq.to/e/THdpTmJwZTJrY0JvZS9QNGVuWWxtQT09",
+      zplayer: "",
+    },
+    image: DragonBallSuper
+    ,
+  },
+  {
+    id: 45,
+    title: "Pinocho",
+    description:
+      'Una marioneta cobra vida gracias a un hada, quien le asigna llevar una vida virtuosa para convertirse en un niño de verdad.',
+    info: {
+      origialTitle: "Pinocho",
+      director: "Robert Zemeckis",
+      generos: " Drama / Acción / Aventura",
+      actores: "Joseph Gordon-Levitt(voz), Tom Hanks, Benjamin Evan Ainsworth(voz)",
+    },
+    years: "2022",
+    time: "1h 45min",
+    pelisLink: {
+      netu: "https://hqq.to/e/d0RuRnhjd0o2TTVjTzRQeTgraUhvQT09",
+      zplayer: "",
+    },
+    image: Pinocho
+    ,
   },
 ];
