@@ -45,7 +45,6 @@ const TopGunM = 'https://imagenes-peliculaz.s3.amazonaws.com/Top-Gun-Maverick.we
 const DragonBallSuper = 'https://imagenes-peliculaz.s3.amazonaws.com/Dragon-Super-Hero.webp'
 
 
-
 export const data = [
   {
     id: 1,
@@ -906,6 +905,126 @@ export const data = [
       zplayer: "",
     },
     image: Pinocho
+    ,
+  },
+  {
+    id: 46,
+    title: "La bestia",
+    description:
+      'Un padre y sus dos hijas adolescentes se ven perseguidos por un enorme león rebelde que intenta demostrar que Savanna tiene un solo depredador.',
+    info: {
+      origialTitle: "Beast",
+      director: "Baltasar Kormákur",
+      generos: " Drama / Terror / Aventura",
+      actores: "Liyabuya Gongo, Martin Munro, Daniel Hadebe",
+    },
+    years: "2022",
+    time: "1h 33min",
+    pelisLink: {
+      netu: "https://hqq.to/e/ZUpXa1hEMHdHREJBd2VsUjU4eUZGZz09",
+      zplayer: "",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Idris-Elba-Bestia.webp'
+    ,
+  },
+  {
+    id: 47,
+    title: "DC Liga de Supermascotas",
+    description:
+      'Krypto y Superman son mejores amigos inseparables, comparten los mismos superpoderes y luchan contra el crimen en Metropolis. Sin embargo, Krypto debe dominar sus propios poderes para una misión de rescate cuando Superman es secuestrado.',
+    info: {
+      origialTitle: "DC League of Super-Pets",
+      director: "Jared SternSam J. Levine(co-director)",
+      generos: " Animaciòn / Acciòn / Aventura",
+      actores: "Dwayne Johnson(voz), Kevin Hart(voz), Kate McKinnon(voz)",
+    },
+    years: "2022",
+    time: "1h 45min",
+    pelisLink: {
+      netu: "https://hqq.to/e/dWxRLzAwUW81YzNPUytSOGh6NGtmdz09",
+      zplayer: "",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Super-Pets.webp'
+    ,
+  },
+  {
+    id: 48,
+    title: "¡Nop!",
+    description:
+      'Los residentes de un barranco solitario en el interior de California son testigos de un descubrimiento extraño y escalofriante.',
+    info: {
+      origialTitle: "Nop",
+      director: "Jordan Peele",
+      generos: " Terror / Misterio / Ciencia Ficciòn",
+      actores: "Daniel Kaluuya, Keke Palmer, Brandon Perea",
+    },
+    years: "2022",
+    time: "2h 10min",
+    pelisLink: {
+      netu: "https://hqq.to/e/VmxvZlBCTmFaSTVCWE9LR1dZMFJMQT09",
+      zplayer: "",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Nope.webp'
+    ,
+  },
+  {
+    id: 49,
+    title: "RRR",
+    description:
+      'Dos revolucionarios legendarios y su viaje lejos de casa antes de comenzar a luchar por su país en la década de 1920.',
+    info: {
+      origialTitle: "RRR (Rise Roar Revolt)",
+      director: "S.S. Rajamouli",
+      generos: " Acciòn / Drama",
+      actores: "N.T. Rama Rao Jr., Ram Charan Teja, Ajay Devgn",
+    },
+    years: "2022",
+    time: "3h 7min",
+    pelisLink: {
+      netu: "https://hqq.to/e/ZUVWZHl5cG55ZlYxTTQ5WHJGbEN0dz09",
+      zplayer: "",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/RRR.webp'
+    ,
+  },
+  {
+    id: 50,
+    title: "Minions: El origen de Gru",
+    description:
+      'La historia no contada del sueño de un niño de doce años de convertirse en el mayor supervillano del mundo.',
+    info: {
+      origialTitle: "Minions: The Rise of Gru",
+      director: "Kyle BaldaBrad, Ableson(co-director), Jonathan del Val(co-director)",
+      generos: " Animaciòn / Aventura / Comedia",
+      actores: "Steve Carell(voz), Pierre Coffin, (voz)Alan Arkin(voz)",
+    },
+    years: "2022",
+    time: "1h 27min",
+    pelisLink: {
+      netu: "https://hqq.to/e/ZTJWLzl4WGhXczU5ODlFcFdlNWR0QT09",
+      zplayer: "",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Minions-Nace-Un-Villano.webp'
+    ,
+  },
+  {
+    id: 50,
+    title: "Todo a la vez en todas partes",
+    description:
+      'Una anciana inmigrante china se ve envuelta en una loca aventura, donde ella sola puede salvar el mundo explorando otros universos que se conectan con sus vidas pasadas.',
+    info: {
+      origialTitle: "Everything Everywhere All at Once",
+      director: "Dan KwanDaniel, Scheinert",
+      generos: " Acciòn / Aventura / Comedia",
+      actores: "Michelle Yeoh, Stephanie Hsu, Jamie Lee Curtis",
+    },
+    years: "2022",
+    time: "2h 19min",
+    pelisLink: {
+      netu: "https://hqq.to/e/Y3E3NnlsMjlHZjBYcCs2dUxITTM0Zz09",
+      zplayer: "",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Everything-Everywhere-All-At-Once.webp'
     ,
   },
 ];
