@@ -1027,4 +1027,64 @@ export const data = [
     image: 'https://imagenes-peliculaz.s3.amazonaws.com/Everything-Everywhere-All-At-Once.webp'
     ,
   },
+  {
+    id: 52,
+    title: "Vertigo",
+    description:
+      'Las mejores amigas Becky y Hunter se encuentran en la cima de una torre de radio a 2, 000 pies de altura.',
+    info: {
+      origialTitle: "Fall",
+      director: "Scott Mann",
+      generos: " Suspenso",
+      actores: "Grace Caro, line Currey, Virginia Gardner, Mason Gooding",
+    },
+    years: "2022",
+    time: "1h 47min",
+    pelisLink: {
+      netu: "https://hqq.to/e/Ukw3UVdaWXVvRmtKMFpONS9DQ1Z1dz09",
+      zplayer: "",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Vertigo.webp'
+    ,
+  },
+  {
+    id: 53,
+    title: "Avatar",
+    description:
+      'Las mejores amigas Becky y Hunter se encuentran en la cima de una torre de radio a 2, 000 pies de altura.',
+    info: {
+      origialTitle: "Avatar",
+      director: "James Cameron",
+      generos: " Acciòn / Aventura / Fantasia",
+      actores: "Sam Worthington, Zoe Saldana, Sigourney Weaver",
+    },
+    years: "2009",
+    time: "2h 42min",
+    pelisLink: {
+      netu: "https://hqq.to/e/R3BNZ0lZZmo2bVFtMWgraUhHQ1hmQT09",
+      zplayer: "",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Avatar.webp'
+    ,
+  },
+  {
+    id: 54,
+    title: "MI DULCE MONSTRUO",
+    description:
+      'La princesa Bárbara está secretamente enamorada del príncipe Eduardo. Cuando el empleado de correos Weasel le exige al rey que lo case con Bárbara, ella huye. El dulce monstruo Boogey hace todo para ayudar a Bárbara a salvar el reino.',
+    info: {
+      origialTitle: "Buka. Moyo lyubimoye chudishche",
+      director: "Viktor Glukhushin, Maksim Volkov",
+      generos: " Animaciòn / Aventura / Familiar",
+      actores: "Lyubov Aksyonova(voz), Prokhor Chekhovskoy(voz), Aleksey Chumakov(voz)",
+    },
+    years: "2021",
+    time: "1h 38min",
+    pelisLink: {
+      netu: "https://hqq.to/e/VTVaa1RWblRxODBsbmhNcGdPZVNLZz09",
+      zplayer: "",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Mi-Dulce-Monstruo.webp'
+    ,
+  },
 ];
