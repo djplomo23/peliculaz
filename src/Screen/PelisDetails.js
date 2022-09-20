@@ -162,7 +162,7 @@ export const PelisDetails = () => {
                   ? "btn-single-full"
                   : "btn-single"
               }
-              onClick={() => setPeliPlay(datas.pelisLink.zplayer)}
+              onClick={() => setPeliPlay(datas.pelisLink.streamsb)}
             >
               StreamSB
             </button>
