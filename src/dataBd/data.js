@@ -1087,4 +1087,84 @@ export const data = [
     image: 'https://imagenes-peliculaz.s3.amazonaws.com/Mi-Dulce-Monstruo.webp'
     ,
   },
+  {
+    id: 55,
+    title: "AMIGOS DE ARMAS",
+    description:
+      'Basada libremente en la historia real de dos jóvenes, David Packouz y Efraim Diveroli, que obtuvieron un contrato de trescientos millones de dólares del Pentágono para armar a los aliados de Estados Unidos en Afganistán.',
+    info: {
+      origialTitle: "War Dogs",
+      director: "Todd Phillips",
+      generos: " Biografìa / Comedia / Crimen",
+      actores: "Jonah Hill, Miles Teller, Steve Lantz",
+    },
+    years: "2016",
+    time: "1h 54min",
+    pelisLink: {
+      netu: "https://hqq.to/e/MDVqWXQ0WkFkMkdqTmhURStUMGVvZz09",
+      streamsb: "https://sblanh.com/e/q727tjosp74e.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Amigos-De-Armas.webp'
+    ,
+  },
+  {
+    id: 56,
+    title: "Zootopia",
+    description:
+      'En una ciudad de animales antropomórficos, una conejita policía y un cínico zorro estafador forman equipo para desvelar una conspiración.',
+    info: {
+      origialTitle: "Zootopia",
+      director: "Byron HowardRich, MooreJared Bush(co-director)",
+      generos: " Animaciòn / Comedia / Aventura",
+      actores: "Ginnifer Goodwin(voz), Jason Bateman(voz), Idris Elba(voz)",
+    },
+    years: "2016",
+    time: "1h 48min",
+    pelisLink: {
+      netu: "https://hqq.to/e/TXFad2lGcTFscnlpYzVTdit2cDEydz09",
+      streamsb: "https://sblanh.com/e/nibzlpa6xz97.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Zootopia.webp'
+    ,
+  },
+  {
+    id: 57,
+    title: "Los sustitutos",
+    description:
+      'En un mundo futurista en el que los humanos viven aislados y se relacionan a través de robots sustitutos, un policía se ve obligado a abandonar su casa por primera vez en años para investigar los asesinatos de los sustitutos de otros.',
+    info: {
+      origialTitle: "Surrogates",
+      director: "Jonathan Mostow",
+      generos: " Acciòn / Ciencia Ficciòn / Suspenso",
+      actores: "Bruce Willis, Radha Mitchell, Ving Rhames",
+    },
+    years: "2009",
+    time: "1h 29min",
+    pelisLink: {
+      netu: "https://hqq.to/e/SmdWdWl3eXVzb0ZLNVFSeTkxay9VQT09",
+      streamsb: "https://sblanh.com/e/9indtuywgt9y.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Los-sustitutos.webp'
+    ,
+  },
+  {
+    id: 58,
+    title: "La ciudad perdida",
+    description:
+      'Una novelista romántica solitaria en una gira de libros junto con su modelo de portada se ve envuelta en un intento de secuestro que los lleva a ambos a una feroz aventura en la jungla.',
+    info: {
+      origialTitle: "The Lost City",
+      director: "Aaron Nee, Adam Nee",
+      generos: " Acciòn / Aventura / Comedia",
+      actores: "Sandra Bullock, Channing Tatum, Daniel Radcliffe",
+    },
+    years: "2022",
+    time: "1h 52min",
+    pelisLink: {
+      netu: "https://hqq.to/e/bUdZbVcyTHRMRGN3N0VRUFprdVFVQT09",
+      streamsb: "https://sblanh.com/e/bofr36no07xa.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/La-Ciudad-perdida.webp'
+    ,
+  },
 ];

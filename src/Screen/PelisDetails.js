@@ -164,7 +164,7 @@ export const PelisDetails = () => {
               }
               onClick={() => setPeliPlay(datas.pelisLink.zplayer)}
             >
-              zplayer
+              StreamSB
             </button>
           </div>
           <iframe
