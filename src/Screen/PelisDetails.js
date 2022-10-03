@@ -158,7 +158,7 @@ export const PelisDetails = () => {
             </button>
             <button
               className={
-                peliPlay === datas.pelisLink.zplayer
+                peliPlay === datas.pelisLink.streamsb
                   ? "btn-single-full"
                   : "btn-single"
               }

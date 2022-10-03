@@ -1167,4 +1167,64 @@ export const data = [
     image: 'https://imagenes-peliculaz.s3.amazonaws.com/La-Ciudad-perdida.webp'
     ,
   },
+  {
+    id: 59,
+    title: "Sonic 2: La película",
+    description:
+      'Cuando el maníaco Dr. Robotnik regresa a la Tierra con un nuevo aliado, Knuckles the Echidna, Sonic y su nuevo amigo Tails son todo lo que se interpone en su camino.',
+    info: {
+      origialTitle: "Sonic 2",
+      director: "Jeff Fowler",
+      generos: " Acciòn / Aventura / Comedia",
+      actores: "James Marsden, Jim Carrey, Ben Schwartz(voz)",
+    },
+    years: "2022",
+    time: "2h 2min",
+    pelisLink: {
+      netu: "https://hqq.to/e/dlpua2U2dU9QK1Z5WEtPSXRhS1BhZz09",
+      streamsb: "https://sblanh.com/e/lmvneghg0ao1.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Sonic-2.webp'
+    ,
+  },
+  {
+    id: 60,
+    title: "Predator: La presa",
+    description:
+      'El origen del Depredador en el mundo de la Nación Comanche hace 300 años. Naru, una hábil guerrera, lucha por proteger a su tribu contra uno de los primeros depredadores altamente evolucionados en aterrizar en la Tierra.',
+    info: {
+      origialTitle: "Prey",
+      director: "Dan Trachtenberg",
+      generos: " Acciòn / Aventura / Drama",
+      actores: "Amber Midthunder, Dakota Beavers, Dane DiLiegro",
+    },
+    years: "2022",
+    time: "1h 39min",
+    pelisLink: {
+      netu: "https://hqq.to/e/SHl4UWV6cllOeWg3bS8wY3lvMC9VZz09",
+      streamsb: "https://sblanh.com/e/xaf3jk4bpvq4.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Depredador-Prey.webp'
+    ,
+  },
+  {
+    id: 61,
+    title: "El Telefono Negro",
+    description:
+      'Después de ser secuestrado por un asesino de niños y encerrado en un sótano a prueba de sonido, un chico de trece años comienza a recibir llamadas desde un teléfono desconectado de las víctimas anteriores del asesino.',
+    info: {
+      origialTitle: "The Black Phone",
+      director: "Scott Derrickson",
+      generos: "Terror / Suspenso",
+      actores: "Mason Thames, Madeleine McGraw, Ethan Hawke",
+    },
+    years: "2021",
+    time: "1h 43min",
+    pelisLink: {
+      netu: "https://hqq.to/e/SzZwNThyNHVuV0tHSytjbkI0ZVVNQT09",
+      streamsb: "https://sblanh.com/e/nndkjlfyzf96.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/El-Telefono-Negro.webp'
+    ,
+  },
 ];
