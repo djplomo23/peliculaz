@@ -1216,7 +1216,7 @@ export const data = [
       origialTitle: "The Black Phone",
       director: "Scott Derrickson",
       generos: "Terror / Suspenso",
-      actores: "Mason Thames, Madeleine McGraw, Ethan Hawke",
+      actores: "Mason Thames, Madeleine McGraw, 1Ethan Hawke",
     },
     years: "2021",
     time: "1h 43min",
@@ -1225,6 +1225,46 @@ export const data = [
       streamsb: "https://sblanh.com/e/nndkjlfyzf96.html",
     },
     image: 'https://imagenes-peliculaz.s3.amazonaws.com/El-Telefono-Negro.webp'
+    ,
+  },
+  {
+    id: 62,
+    title: "Deadpool",
+    description:
+      'Un mercenario de lengua rápida y sentido del humor mórbido es sometido a una operación clandestina que le deja con poderes de curación acelerada y en búsqueda de venganza.',
+    info: {
+      origialTitle: "Deadpool",
+      director: "Tim Miller",
+      generos: "Acción / Aventura / Comedia",
+      actores: "Ryan Reynolds, Morena Baccarin, T.J. Miller",
+    },
+    years: "2016",
+    time: "1h 48min",
+    pelisLink: {
+      netu: "https://hqq.to/e/VXVWNXg0bjRvK2I2Rzk3QlJsaUdndz09",
+      streamsb: "https://sblanh.com/e/18q48salq3eb.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/DeadPool-1.webp'
+    ,
+  },
+  {
+    id: 63,
+    title: "Deadpool 2",
+    description:
+      'El mercenario mutante malhablado Wade Wilson (también conocido como Deadpool), reúne a un equipo de compañeros mutantes para proteger a un joven con habilidades sobrenaturales del brutal cíborg Cable, que viaja en el tiempo.',
+    info: {
+      origialTitle: "Deadpool 2",
+      director: "David Leitch",
+      generos: "Acción / Aventura / Comedia",
+      actores: "Ryan Reynolds, Josh Brolin, Morena Baccarin",
+    },
+    years: "2018",
+    time: "1h 59min",
+    pelisLink: {
+      netu: "https://hqq.to/e/NmhiNjJ0bnI0dlM4dnUvSjdsYWE5QT09",
+      streamsb: "https://sblanh.com/e/og703qg6vrtz.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/DeadPool-2.webp'
     ,
   },
 ];
