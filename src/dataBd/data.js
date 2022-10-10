@@ -1267,4 +1267,124 @@ export const data = [
     image: 'https://imagenes-peliculaz.s3.amazonaws.com/DeadPool-2.webp'
     ,
   },
+  {
+    id: 64,
+    title: "Un ciudadano ejemplar",
+    description:
+      'Un hombre frustrado decide hacerse cargo de la justicia en sus propias manos después de que un acuerdo de culpabilidad libere a uno de los asesinos de su familia. Apunta no solo al asesino sino también al fiscal de distrito y otros involucrados en el trato.',
+    info: {
+      origialTitle: "Law Abiding Citizen",
+      director: "F. Gary Gray",
+      generos: "Acción / Crimen / Drama",
+      actores: "Gerard Butler, Jamie Foxx, Leslie Bibb",
+    },
+    years: "2009",
+    time: "1h 49min",
+    pelisLink: {
+      netu: "https://hqq.to/e/N1JGT3VkN3JhUGpOMmc3TDhQelhLQT09",
+      streamsb: "https://sbanh.com/e/ho2q1vuyo28p.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Un-ciudadano-ejemplar.webp'
+    ,
+  },
+  {
+    id: 65,
+    title: "Jurassic World: Dominion",
+    description:
+      'Años después de la destrucción de Isla Nublar, los dinosaurios viven y cazan junto a los humanos. Este equilibrio determinará, si los humanos seguirán siendo los depredadores máximos en un planeta que comparten con las criaturas temibles.',
+    info: {
+      origialTitle: "Jurassic World: Dominion",
+      director: "Colin Trevorrow",
+      generos: "Acción / Aventura / Ciencia Ficción",
+      actores: "Chris Pratt, Bryce Dallas Howard, Laura Dern",
+    },
+    years: "2022",
+    time: "2h 27min",
+    pelisLink: {
+      netu: "https://hqq.to/e/ZXRORnV2UWFDRkNoeHJKVGJiYmJkQT09",
+      streamsb: "https://sbanh.com/e/f71htna7399r.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Jurassic.World.Dominio.webp'
+    ,
+  },
+  {
+    id: 66,
+    title: "Lightyear",
+    description:
+      'La historia de Buzz Lightyear y sus aventuras hasta el infinito y más allá.',
+    info: {
+      origialTitle: "Lightyear",
+      director: "Angus MacLane",
+      generos: "Acción / Animación / Aventura",
+      actores: "Chris Evans(voz), Keke Palmer(voz), Peter Sohn(voz)",
+    },
+    years: "2022",
+    time: "1h 40min",
+    pelisLink: {
+      netu: "https://hqq.to/e/VVo1Ylgxd3FaQjlUT1llT21JQlBLdz09",
+      streamsb: "https://sbanh.com/e/wlg393mqjha5.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Lightyear.webp'
+    ,
+  },
+  {
+    id: 67,
+    title: "Instinto peligroso",
+    description:
+      'Un sociópata reformado viaja a una isla remota para investigar el misterio detrás de la muerte de su hermano, pero pronto termina enfrentando más de lo que esperaba.',
+    info: {
+      origialTitle: "Instinto peligroso",
+      director: "David Hackl",
+      generos: "Acción / Suspenso ",
+      actores: "Scott Eastwood, Kevin Durand, Famke Janssen",
+    },
+    years: "2021",
+    time: "1h 39min",
+    pelisLink: {
+      netu: "https://hqq.to/e/aVdOMW0yWlpQTEtLOVZ1M0JwdWxWZz09",
+      streamsb: "https://sbanh.com/e/qxjazxhbkhmr.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Instinto-Peligroso.webp'
+    ,
+  },
+  {
+    id: 68,
+    title: "Morbius",
+    description:
+      'El bioquímico Michael Morbius intenta curarse de una rara enfermedad sanguínea pero en su lugar se infecta con un tipo de vampirismo.',
+    info: {
+      origialTitle: "Morbius",
+      director: "Daniel Espinosa",
+      generos: "Acción / Aventura / Terror ",
+      actores: "Jared Leto, Matt Smith, Adria Arjona",
+    },
+    years: "2022",
+    time: "1h 44min",
+    pelisLink: {
+      netu: "https://hqq.to/e/N3lhRExUSmRXMGdKVE12SEtsWFkwZz09",
+      streamsb: "https://sbanh.com/e/lahhyh9475u0.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/Morbius.webp'
+    ,
+  },
+  {
+    id: 69,
+    title: "La huérfana: primer asesinato",
+    description:
+      'Desquiciada Leena dirige una huida de un asilo estonio y viaja a América robando la identidad de la hija de una familia. Sin embargo, la vida como "Esther" la pone en contra de una madre que hará cualquier cosa para proteger a su familia.',
+    info: {
+      origialTitle: "Orphan: First Kill",
+      director: "William Brent Bell",
+      generos: "Crimen / Drama / Terror ",
+      actores: "Isabelle Fuhrman, Julia Stiles, Rossif Sutherland",
+    },
+    years: "2022",
+    time: "1h 39min",
+    pelisLink: {
+      netu: "https://hqq.to/e/bFc4K25HazRQdC9TRW9xeUNydy94UT09",
+      streamsb: "https://sbanh.com/e/61dxoxxpzy7g.html",
+    },
+    image: 'https://imagenes-peliculaz.s3.amazonaws.com/La-Huerfana-El-origen.webp'
+    ,
+  },
 ];
