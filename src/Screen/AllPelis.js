@@ -12,7 +12,7 @@ export const AllPelis = ({seachBoxAll, movies, setMovies }) => {
       try {
         const peliculas = await axios.get('https://backend-peliculaz.herokuapp.com/api/movies?sort=-createdat&limit=100', {
           headers: {
-            "Access-Control-Allow-Origin": true
+            "Access-Control-Allow-Origin": 'https://backend-peliculaz.herokuapp.com'
           }
         })
       setMovies(peliculas.data.docs)
@@ -21,7 +21,7 @@ export const AllPelis = ({seachBoxAll, movies, setMovies }) => {
       }
     }
 
-    console.log(movies)
+  
 
     useEffect(() => {
       

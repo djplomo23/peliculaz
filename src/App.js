@@ -23,7 +23,6 @@ function App() {
     navigate("../", { replace: true });
   }
 
-  console.log(seachBox)
 
 
   /*const postMovies = async () =>{
