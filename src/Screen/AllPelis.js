@@ -5,6 +5,7 @@ import axios from 'axios'
 
 
 
+
 export const AllPelis = ({seachBoxAll, movies, setMovies }) => {
     const [seachBox, setSeachBox] = useState("");
    //const [movies, setMovies] = useState([]);
