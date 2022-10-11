@@ -4,17 +4,14 @@ import { useEffect, useState } from 'react';
 import axios from 'axios'
 
 
+
 export const AllPelis = ({seachBoxAll, movies, setMovies }) => {
     const [seachBox, setSeachBox] = useState("");
    //const [movies, setMovies] = useState([]);
 
     const moviesGet = async () =>{
       try {
-        const peliculas = await axios.get('https://backend-peliculaz.herokuapp.com/api/movies?sort=-createdat&limit=100', {
-          headers: {
-            "Access-Control-Allow-Origin": 'https://backend-peliculaz.herokuapp.com'
-          }
-        })
+        const peliculas = await axios.get('http://localhost:3000/api/movies?sort=-createdat&limit=100')
       setMovies(peliculas.data.docs)
       } catch (error) {
         console.log(error)
