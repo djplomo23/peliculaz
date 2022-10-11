@@ -10,7 +10,7 @@ export const AllPelis = ({seachBoxAll, movies, setMovies }) => {
 
     const moviesGet = async () =>{
       try {
-        const peliculas = await axios.get('http://localhost:3000/api/movies?sort=-createdat&limit=100')
+        const peliculas = await axios.get('https://backend-peliculaz.herokuapp.com/api/movies?sort=-createdat&limit=100')
       console.log(peliculas.data.docs)
       setMovies(peliculas.data.docs)
       } catch (error) {
