@@ -2,11 +2,30 @@ import { useEffect, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { data } from "dataBd/data";
 import { useSEO } from "Hooks/useSEO";
+import axios from 'axios'
 
 import gsap from "gsap";
 
-export const PelisDetails = () => {
+export const PelisDetails = ({movies}) => {
   const [peliPlay, setPeliPlay] = useState("");
+  //const [movies, setMovies] = useState([]);
+
+  const params = useParams();
+
+  /*const moviesGet = async () =>{
+    try {
+      const peliculas = await axios.get(`http://localhost:3000/api/movies/:${params.id}`)
+    console.log(peliculas.data.docs)
+    setMovies(peliculas.data.docs)
+    } catch (error) {
+      console.log(error)
+    }
+  }*/
+
+  /*useEffect(() => {
+    moviesGet()
+  }, [])*/
+  
 
   const example = {
     id: 35,
@@ -22,18 +41,18 @@ export const PelisDetails = () => {
     time: "Error",
     pelisLink: {
       netu: "Error",
-      zplayer: "Error",
+      streamsb: "Error",
     },
     image: "Error",
     error: true,
   };
 
-  const params = useParams();
+  
 
   const navigate = useNavigate();
   const error = () => navigate("../error404", { replace: true });
 
-  const datass = data?.find((peli) => peli.id == params.id && peli);
+  const datass = movies?.find((peli) => peli.id == params.id && peli);
 
   const datas = datass ? datass : example;
 

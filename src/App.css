@@ -258,6 +258,7 @@ body::-webkit-scrollbar{
   transition: 0.3s;
   min-width: 200px;
   min-height: 400px;
+  max-height: 400px;
   max-width: 200px;
   margin: 10px;
   overflow: hidden;

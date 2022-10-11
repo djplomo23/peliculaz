@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "App.css";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
@@ -8,23 +8,45 @@ import logo from "img/peliculaZ-logo.png";
 import { Footer } from "Component/Footer";
 import { AllPelis } from "Screen/AllPelis";
 import { Error404 } from "Component/Error404";
+import axios from 'axios'
+ import {data} from 'dataBd/data'
 
 
 function App() {
   
   const [seachBox, setSeachBox] = useState("");
+  const [movies, setMovies] = useState([]);
 
-  /* const nextPage = () => {
-    setCurrentPage(currentPage + 10);
-  };
-  const prevPage = () => {
-    if (currentPage > 0) setCurrentPage(currentPage - 10);
-  };*/
+  
   let navigate = useNavigate()
   const logoClick = () => {
     navigate("../", { replace: true });
   }
 
+  console.log(seachBox)
+
+
+  /*const postMovies = async () =>{
+
+    for (let i = 0; i < data.length; i++) {
+      const element = data[i];
+      await axios.post('http://localhost:3000/api/movies', {
+        title: element.title,
+        description: element.description,
+        info: element.info,
+        years: element.years,
+        time: element.time,
+        pelisLink: element.pelisLink,
+        image: element.image
+      })
+    }
+
+  }
+
+  useEffect(() => {
+    postMovies()
+  }, [])*/
+  
  
   return (
     <div className="App">
@@ -37,8 +59,8 @@ function App() {
       </header>
       <div className="body">
         <Routes>
-          <Route path="/" element={<AllPelis seachBoxAll={seachBox} />} />
-         <Route path="/pelicula=:title/id=:id" element={<PelisDetails />} />
+          <Route path="/" element={<AllPelis seachBoxAll={seachBox} setMovies={setMovies} movies={movies} />} />
+         <Route path="/pelicula=:title/id=:id" element={<PelisDetails movies={movies} />} />
          <Route path="*" element={<Error404 />} />
         </Routes>
 
