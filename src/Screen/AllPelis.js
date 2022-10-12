@@ -2,20 +2,24 @@ import { Card } from 'Component/Card';
 import {data} from 'dataBd/data';
 import { useEffect, useState } from 'react';
 import axios from 'axios'
+import { Spinner } from 'Component/spinner';
 
 
 
 
 export const AllPelis = ({seachBoxAll, movies, setMovies }) => {
     const [seachBox, setSeachBox] = useState("");
-   //const [movies, setMovies] = useState([]);
+    const [loader, setLoader] = useState(true);
+    const [moviesError, setMoviesError] = useState(null);
 
     const moviesGet = async () =>{
       try {
         const peliculas = await axios.get('https://backend-peliculaz.herokuapp.com/api/movies?sort=-createdat&limit=100')
       setMovies(peliculas.data.docs)
+      setLoader(false)
       } catch (error) {
         console.log(error)
+        setMoviesError(error.message)
       }
     }
 
@@ -46,13 +50,15 @@ export const AllPelis = ({seachBoxAll, movies, setMovies }) => {
     
 
   return (
-    datas?.map((pelis, i) => (
+  <>
+      {loader ? (!moviesError ? <Spinner/> : <p className='texto'>{moviesError}</p>)  : datas?.map((pelis, i) => (
       <Card
         key={pelis.id}
         pelis={{ pelis, i }}
         
       />
     ))
-    .reverse()
+    .reverse()}
+    </>
   )
 }

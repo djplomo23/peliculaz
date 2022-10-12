@@ -300,7 +300,34 @@ img {
 
 }
 
+.texto{
+  color: red;
+  width: 100px;
+  margin: auto;
+}
 
+.spinner{
+  width: 10em;
+  height: 10em;
+  border-top: 1em solid darkorange ;
+  border-right: 1em solid transparent;
+  border-radius: 50%;
+  margin: auto;
+  animation: spinner 2s linear infinite;
+}
+
+.circle{
+  width: 1em;
+  height: 1em;
+  background-color: darkorange;
+  border-radius: 50%;
+  margin-left: 8.5em;
+  margin-top: 0.5em;
+}
+
+@keyframes spinner{
+  100% {transform: rotate(360deg);}
+}
 
 .App-logo {
   height: 40vmin;
