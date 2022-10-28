@@ -8,24 +8,21 @@ import gsap from "gsap";
 
 export const PelisDetails = ({movies}) => {
   const [peliPlay, setPeliPlay] = useState("");
-  //const [movies, setMovies] = useState([]);
+  const [Detail, setDetail] = useState(null);
 
   const params = useParams();
 
-  /*const moviesGet = async () =>{
+  const moviesGet = async () =>{
     try {
-      const peliculas = await axios.get(`http://localhost:3000/api/movies/:${params.id}`)
-    console.log(peliculas.data.docs)
-    setMovies(peliculas.data.docs)
+      const peliculas = await axios.get(`http://localhost:3000/api/movies/${params.id}`)
+    console.log(peliculas.data)
+    setDetail(peliculas.data)
     } catch (error) {
       console.log(error)
     }
-  }*/
+  }
+ 
 
-  /*useEffect(() => {
-    moviesGet()
-  }, [])*/
-  
 
   const example = {
     id: 35,
@@ -54,7 +51,7 @@ export const PelisDetails = ({movies}) => {
 
   const datass = movies?.find((peli) => peli.id == params.id && peli);
 
-  const datas = datass ? datass : example;
+  const datas = datass ? datass : example ;
 
   datas.error && error();
 
@@ -118,13 +115,14 @@ export const PelisDetails = ({movies}) => {
       opacity: 0,
     });
   }, []);
+   console.log(params.id)
 
   return (
     datas && (
       <div>
         <div className="container">
           <div className="imgPelis">
-            <img ref={detailsImg} src={datas.image} alt={datas.title} />
+            <img ref={detailsImg} src={datas.image.url} alt={datas.title} />
           </div>
           <div className="detail">
             <h1 ref={detailsTitle}>{datas.title}</h1>

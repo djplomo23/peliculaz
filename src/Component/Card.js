@@ -45,7 +45,7 @@ export const Card = ({ pelis}) => {
       <Link to={`/pelicula=${titleEdict}/id=${pelis.pelis.id}`}>
         <img
           loading="lazy"
-          src={pelis.pelis.image}
+          src={pelis.pelis.image.url}
           alt="Avatar"
         />
       </Link>

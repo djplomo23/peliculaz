@@ -11,10 +11,12 @@ export const AllPelis = ({seachBoxAll, movies, setMovies }) => {
     const [seachBox, setSeachBox] = useState("");
     const [loader, setLoader] = useState(true);
     const [moviesError, setMoviesError] = useState(null);
+    const [media, setMedia] = useState(null);
 
     const moviesGet = async () =>{
       try {
-        const peliculas = await axios.get('https://backend-peliculaz.herokuapp.com/api/movies?sort=-createdat&limit=100')
+        const peliculas = await axios.get('http://localhost:3000/api/movies?sort=-createdat&limit=100')
+        console.log(peliculas)
       setMovies(peliculas.data.docs)
       setLoader(false)
       } catch (error) {
@@ -37,7 +39,7 @@ export const AllPelis = ({seachBoxAll, movies, setMovies }) => {
       
     }, [seachBoxAll])
 
-    
+  
  
 
    const datas = movies?.filter(
