@@ -65,7 +65,7 @@ export const PelisDetails = ({movies}) => {
   }, [datass]);
 
   useEffect(() => {
-    setPeliPlay(datas.pelisLink.netu);
+    setPeliPlay(datas?.pelisLink.netu);
   }, [datas]);
 
   useEffect(() => {
