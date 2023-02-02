@@ -283,6 +283,50 @@ body::-webkit-scrollbar{
   width: 100%;
 }
 
+.yearPleis{
+  color: white;
+  background-color: black;
+  margin: 5px;
+  padding: 2px;
+  font-size: 12px;
+  border-radius: 10%;
+  position: absolute;
+}
+
+.yearTime{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardDes{
+  position: absolute;
+  margin: auto;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 80%;
+  color: white;
+  font-size: 12px;
+ text-align: start;
+ text-decoration: none;
+ font-weight: 200;
+ opacity: 0;
+ transition: all ease-in-out 0.2s;
+}
+.cardDes p{
+  margin-top: 25px;
+  
+}
+
+.cardDes h2{
+  font-size: 12px;
+  text-align: center;
+  
+}
+
+.cardDes:hover{
+  opacity: 1;
+}
+
 img {
   border-radius: 5px;
   height: 80%;

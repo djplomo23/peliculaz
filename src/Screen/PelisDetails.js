@@ -27,7 +27,6 @@ export const PelisDetails = ({movies}) => {
       setDatas(error.response.status)
     }
   }
- 
 
 
   const example = {
@@ -50,11 +49,10 @@ export const PelisDetails = ({movies}) => {
     error: true,
   };
 
-
+  
 
   const datass = movies?.find((peli) => peli.id == params.id && peli);
   
-
   useEffect(() => {
     if (datass){
       setDatas(datass)

@@ -38,15 +38,23 @@ export const Card = ({ pelis}) => {
       
     }, "<");
   }, [])
-  
+  console.log(pelis)
   
   return ( pelis &&
     <div ref={cardOpaciti} className="card">
-      <Link to={`/pelicula=${titleEdict}/id=${pelis.pelis.id}`}>
+    
+   <Link to={`/pelicula=${titleEdict}/id=${pelis.pelis.id}`}>
+   <div className="yearPleis">{pelis.pelis.years}</div>
+    <div className="cardDes">
+      <h2>{pelis.pelis.title}</h2>
+      <p>{pelis.pelis.description}</p>
+      <p>{pelis.pelis.info.generos}</p>
+      <div className="yearTime"><p>{pelis.pelis.years}</p> <p>{pelis.pelis.time}</p></div>
+    </div>
         <img
           loading="lazy"
           src={pelis.pelis.image.url}
-          alt="Avatar"
+          alt={pelis.pelis.title}
         />
       </Link>
       <div className="container"></div>
