@@ -21,6 +21,7 @@ function App() {
   let navigate = useNavigate()
   const logoClick = () => {
     navigate("../", { replace: true });
+    setSeachBox("")
   }
 
 
@@ -54,7 +55,7 @@ function App() {
         
         <img onClick={logoClick} src={logo} alt="Peliculas" />
         
-        <input onChange={(e) => setSeachBox(e.target.value)}></input>
+        <input value={seachBox} onChange={(e) => setSeachBox(e.target.value)}></input>
       </header>
       <div className="body">
         <Routes>
