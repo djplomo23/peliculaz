@@ -8,17 +8,23 @@ import gsap from "gsap";
 
 export const PelisDetails = ({movies}) => {
   const [peliPlay, setPeliPlay] = useState("");
+  const [datas, setDatas] = useState(null)
   const [Detail, setDetail] = useState(null);
 
   const params = useParams();
 
+  const navigate = useNavigate();
+  const errorF = () => navigate("../error404", { replace: true });
+
   const moviesGet = async () =>{
     try {
-      const peliculas = await axios.get(`http://localhost:3000/api/movies/${params.id}`)
+      const peliculas = await axios.get(`https://backend-peliculaz.herokuapp.com/api/movies/${params.id}`)
     console.log(peliculas.data)
-    setDetail(peliculas.data)
+    setDatas(peliculas.data)
     } catch (error) {
-      console.log(error)
+      errorF();
+      console.log(error.response.status)
+      setDatas(error.response.status)
     }
   }
  
@@ -44,18 +50,19 @@ export const PelisDetails = ({movies}) => {
     error: true,
   };
 
-  
 
-  const navigate = useNavigate();
-  const error = () => navigate("../error404", { replace: true });
 
   const datass = movies?.find((peli) => peli.id == params.id && peli);
+  
 
-  const datas = datass ? datass : example ;
-
-  datas.error && error();
-
-  console.log(datas);
+  useEffect(() => {
+    if (datass){
+      setDatas(datass)
+    } else {
+      moviesGet()
+      
+    }
+  }, [datass]);
 
   useEffect(() => {
     setPeliPlay(datas.pelisLink.netu);
