@@ -283,14 +283,37 @@ body::-webkit-scrollbar{
   width: 100%;
 }
 
+
+
 .yearPleis{
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.yearCartel{
   color: white;
   background-color: black;
-  margin: 5px;
-  padding: 2px;
+  margin-top: 0;
+  padding: 4px;
   font-size: 12px;
-  border-radius: 10%;
+  
+}
+
+.peliCartel{
   position: absolute;
+  top: 0;
+  right: 0;
+  
+  background-color: rgb(159, 88, 0);;
+  color: white;
+  margin-top: 0;
+  padding: 4px;
+  font-size: 12px;
+ 
+
 }
 
 .yearTime{

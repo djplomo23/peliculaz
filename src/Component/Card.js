@@ -44,7 +44,7 @@ export const Card = ({ pelis}) => {
     <div ref={cardOpaciti} className="card">
     
    <Link to={`/pelicula=${titleEdict}/id=${pelis.pelis.id}`}>
-   <div className="yearPleis">{pelis.pelis.years}</div>
+   <div className="yearPleis"><p className="yearCartel">{pelis.pelis.years}</p><p className="peliCartel">PELICULA</p></div>
     <div className="cardDes">
       <h2>{pelis.pelis.title}</h2>
       <p>{pelis.pelis.description}</p>
