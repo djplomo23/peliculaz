@@ -6,10 +6,11 @@ import axios from 'axios'
 
 import gsap from "gsap";
 
-export const PelisDetails = ({movies}) => {
+export const SeriesDetails = ({series}) => {
   const [peliPlay, setPeliPlay] = useState("");
   const [datas, setDatas] = useState(null)
-  const [Detail, setDetail] = useState(null);
+  const [episodios, setEpisodios] = useState({});
+  
 
   const params = useParams();
 
@@ -18,12 +19,12 @@ export const PelisDetails = ({movies}) => {
 
   const moviesGet = async () =>{
     try {
-      const peliculas = await axios.get(`https://backend-peliculaz.herokuapp.com/api/movies/${params.id}`)
-    console.log(peliculas.data)
+      const peliculas = await axios.get(`https://backend-peliculaz.herokuapp.com/api/series/${params.id}`)
+    //console.log(peliculas.data)
     setDatas(peliculas.data)
     } catch (error) {
       errorF();
-      console.log(error.response.status)
+     // console.log(error.response.status)
       setDatas(error.response.status)
     }
   }
@@ -51,7 +52,7 @@ export const PelisDetails = ({movies}) => {
 
   
 
-  const datass = movies?.find((peli) => peli.id == params.id && peli);
+  const datass = series?.find((peli) => peli.id == params.id && peli);
   
   useEffect(() => {
     if (datass){
@@ -120,12 +121,12 @@ export const PelisDetails = ({movies}) => {
       opacity: 0,
     });
   }, []);
-   
-
+  console.log(peliPlay)
+   console.log(episodios)
   return (
     datas && (
       <div>
-        <div className="container">
+        <div className="container" >
           <div className="imgPelis">
             <img ref={detailsImg} src={datas.image.url} alt={datas.title} />
           </div>
@@ -166,29 +167,34 @@ export const PelisDetails = ({movies}) => {
             las películas
           </p>
         </div>
-        <div className="reproductor">
-          <div className="btn">
-            {/*<button
+        <div className="btn">
+            
+            {datas.series.map(temporadas => 
+              <button
+              key={temporadas.id}
               className={
-                peliPlay === datas.pelisLink.netu
-                  ? "btn-single-full"
-                  : "btn-single"
+                episodios.id == temporadas.id
+                ? "btn-single-full"
+                : "btn-single"
+                  
               }
-              onClick={() => setPeliPlay(datas.pelisLink.netu)}
+              onClick={() =>  setEpisodios(temporadas)  }
+              
             >
-              Netu
-            </button>*/}
-            {/*<button
-              className={
-                peliPlay === datas.pelisLink.streamsb
-                  ? "btn-single-full"
-                  : "btn-single"
+              {temporadas.blockName}
+            </button>
+             )
               }
-              onClick={() => setPeliPlay(datas.pelisLink.streamsb)}
-            >
-              StreamSB
-            </button>*/}
+
+              <div className="btn-ep">
+                {episodios.episodios?.map((ep, index) => <div className="ep">EP | <p>{index + 1}</p> <button className={peliPlay == ep.netu
+                ? "btn-single-full"
+                : "btn-single"} onClick={() => setPeliPlay(ep.netu)}>{ep.episodios}</button></div>)}
+              </div>
+            
           </div>
+        <div className="reproductor">
+          
           <iframe
             title={datas.title}
             className="video"
@@ -201,6 +207,8 @@ export const PelisDetails = ({movies}) => {
             frameborder="0"
             scrolling="no"
           ></iframe>
+
+
         </div>
       </div>
     )

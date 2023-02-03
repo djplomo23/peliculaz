@@ -7,17 +7,20 @@ import { Spinner } from 'Component/spinner';
 
 
 
-export const AllPelis = ({seachBoxAll, movies, setMovies }) => {
+export const AllPelis = ({seachBoxAll, movies, setMovies, setSeries, series }) => {
     const [seachBox, setSeachBox] = useState("");
     const [loader, setLoader] = useState(true);
     const [moviesError, setMoviesError] = useState(null);
-    const [media, setMedia] = useState(null);
+    const [media, setMedia] = useState([]);
+
+    const All = []
 
     const moviesGet = async () =>{
       try {
         const peliculas = await axios.get('https://backend-peliculaz.herokuapp.com/api/movies?sort=-createdat&limit=500')
-        console.log(peliculas)
+       //console.log(peliculas)
       setMovies(peliculas.data.docs)
+      
       setLoader(false)
       } catch (error) {
         console.log(error)
@@ -25,19 +28,61 @@ export const AllPelis = ({seachBoxAll, movies, setMovies }) => {
       }
     }
 
-  
+    //console.log(All)
+
+
+    const seriesGet = async () =>{
+      try {
+        const peliculas = await axios.get('https://backend-peliculaz.herokuapp.com/api/series?sort=-createdat&limit=500')
+        console.log(peliculas.data)
+        setSeries(peliculas.data.docs)
+        
+      
+      setLoader(false)
+      } catch (error) {
+        console.log(error)
+        setMoviesError(error.message)
+      }
+    }
+
+  console.log(series)
 
     useEffect(() => {
       
       moviesGet()
+      seriesGet()
+      
       
     }, [])
 
     useEffect(() => {
       setSeachBox(seachBoxAll)
       moviesGet()
+      seriesGet()
+     
       
     }, [seachBoxAll])
+
+
+    useEffect(() => {
+      
+      for (let i = 0; i < series.length; i++) {
+        const element = series[i];
+        
+        if(movies.every(movie => movie.id !== element.id)){
+          setMovies([...movies, element])
+        }return
+      
+      }
+
+    }, [series, movies])
+
+
+    
+
+   
+
+   
 
   
  
@@ -46,9 +91,12 @@ export const AllPelis = ({seachBoxAll, movies, setMovies }) => {
     (pelis) =>
       pelis.title.toUpperCase().includes(seachBox.toUpperCase()) ||
       pelis.description.toUpperCase().includes(seachBox.toUpperCase()) ||
-      pelis.info.origialTitle.toUpperCase().includes(seachBox.toUpperCase())
+      pelis.info.origialTitle.toUpperCase().includes(seachBox.toUpperCase()) 
+      
+      
   )
 
+    
     
 
   return (

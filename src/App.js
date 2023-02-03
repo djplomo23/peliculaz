@@ -10,12 +10,14 @@ import { AllPelis } from "Screen/AllPelis";
 import { Error404 } from "Component/Error404";
 import axios from 'axios'
 import insta from './img/instagram-svgrepo-com.svg';
+import { SeriesDetails } from "Screen/SeriesDetails";
 
 
 function App() {
   
   const [seachBox, setSeachBox] = useState("");
   const [movies, setMovies] = useState([]);
+  const [series, setSeries] = useState([]);
 
   
   let navigate = useNavigate()
@@ -23,6 +25,8 @@ function App() {
     navigate("../", { replace: true });
     setSeachBox("")
   }
+
+  
 
 
 
@@ -59,8 +63,9 @@ function App() {
       </header>
       <div className="body">
         <Routes>
-          <Route path="/" element={<AllPelis seachBoxAll={seachBox} setMovies={setMovies} movies={movies} />} />
-         <Route path="/pelicula=:title/id=:id" element={<PelisDetails movies={movies} />} />
+          <Route path="/" element={<AllPelis seachBoxAll={seachBox} setSeries={setSeries} setMovies={setMovies} series={series} movies={movies} />} />
+         <Route path="/movies=:title/id=:id" element={<PelisDetails movies={movies} />} />
+         <Route path="/series=:title/id=:id" element={<SeriesDetails series={series} />} />
          <Route path="*" element={<Error404 />} />
         </Routes>
         <div className="insta">
