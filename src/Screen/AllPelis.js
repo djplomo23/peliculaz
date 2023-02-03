@@ -46,7 +46,7 @@ export const AllPelis = ({seachBoxAll, movies, setMovies, setSeries, series }) =
       }
     }
 
-  console.log(series)
+
 
     useEffect(() => {
       
@@ -110,7 +110,7 @@ export const AllPelis = ({seachBoxAll, movies, setMovies, setSeries, series }) =
 
   return (
   <>
-   <Carrusel/>
+   <Carrusel seachBox={seachBox}/>
       {loader ? (!moviesError ? <Spinner/> : <p className='texto'>{moviesError}</p>)  : datas?.map((pelis, i) => (
       <Card
         key={pelis.id}

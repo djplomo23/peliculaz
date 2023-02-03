@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 
-export const Carrusel = ({ pelis}) => {
+export const Carrusel = ({ seachBox}) => {
     const [carrusel, setCarrusel] = useState([])
 
     const carruselGet = async () =>{
@@ -28,7 +28,7 @@ export const Carrusel = ({ pelis}) => {
 
       const send = (link) => navigate(link, { replace: true });
   
-  return ( carrusel &&
+  return ( seachBox === "" && carrusel &&
     <div className="carruselDiv">
     <section className="carrusel">
     {carrusel?.map(carr =>  <img key={carr.id} onClick={() => send(carr.link)} src={carr.image.url}/> )}
