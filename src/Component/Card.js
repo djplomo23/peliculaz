@@ -45,7 +45,7 @@ export const Card = ({ pelis}) => {
     <div ref={cardOpaciti} className="card" key={pelis.pelis.id}>
     
    <Link to={pelis.pelis.series ? `/series=${titleEdict}/id=${pelis.pelis.id}` : `/movies=${titleEdict}/id=${pelis.pelis.id}`}>
-   <div className="yearPleis"><p className="yearCartel">{pelis.pelis.years}</p><p className={pelis.pelis.series ? "serieCartel" : 'peliCartel'}>{pelis.pelis.series ? 'SERIES' : 'PELICULA'}</p></div>
+   <div className="yearPleis"><p className="yearCartel">{pelis.pelis.years}</p><p className={pelis.pelis.series ? "serieCartel" : 'peliCartel'}>{pelis.pelis.series ? 'SERIE' : 'PELICULA'}</p></div>
     <div className="cardDes">
       <h2>{pelis.pelis.title}</h2>
       <p>{pelis.pelis.description}</p>

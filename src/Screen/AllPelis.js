@@ -71,7 +71,7 @@ export const AllPelis = ({seachBoxAll, movies, setMovies, setSeries, series }) =
         
         if(movies.every(movie => movie.id !== element.id)){
           setMovies([...movies, element])
-        }return
+        }
       
       }
 
