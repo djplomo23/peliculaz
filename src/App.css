@@ -3,6 +3,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
+  
   overflow-x: hidden;
   scroll-behavior: smooth;
   
@@ -87,6 +88,7 @@ body::-webkit-scrollbar{
 
 .container{
   display: grid;
+  
   grid-template-columns: repeat(3, 1fr);
   padding: 10px;
 
@@ -196,7 +198,8 @@ body::-webkit-scrollbar{
   border: solid 1px rgb(159, 88, 0);
   border-radius: 5px;
   height: 400px;
-  width: auto;
+  max-width: 80%;
+  min-width: 80%;
   grid-column: 1 / 8;
   grid-row: 2;
   display: flex;
@@ -206,13 +209,20 @@ body::-webkit-scrollbar{
   
 }
 
+.contentBtn{
+  display: grid;
+  place-items: center;
+  
+}
+
 .btn-ep{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  gap: 5px;
   width: 100%;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .ep{
@@ -220,15 +230,16 @@ body::-webkit-scrollbar{
   justify-content: center;
   align-items: center;
   margin: 5px;
+  text-align: center;
   
 }
 
 
 .btn{
-  
+
   margin: auto;
-  width: 100%;
-  margin: 10px;
+  min-width: 80%;
+  max-width: 80%;
   margin-top: 20px;
   
   
@@ -268,6 +279,37 @@ body::-webkit-scrollbar{
   background: #000000;
   
   
+}
+
+.carruselDiv{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.carrusel{
+  display: flex;
+  width: 600px;
+  height: 600px;
+  
+}
+
+.carrusel img{
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+.carrusel img:hover{
+  width: 200px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.carr{
+  position: absolute;
 }
 
 .card {
@@ -463,6 +505,8 @@ img {
   }
 }
 
+
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .container{
@@ -500,6 +544,10 @@ img {
   .logoModal{
     height: 80%;
     width: 80%;
+  }
+
+  .carrusel{
+    display: none;
   }
 
   

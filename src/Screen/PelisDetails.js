@@ -63,7 +63,7 @@ export const PelisDetails = ({movies}) => {
   }, [datass]);
 
   useEffect(() => {
-    //setPeliPlay(datas?.pelisLink.netu);
+    setPeliPlay(datas?.pelisLink.netu);
   }, [datas]);
 
   useEffect(() => {
@@ -168,7 +168,7 @@ export const PelisDetails = ({movies}) => {
         </div>
         <div className="reproductor">
           <div className="btn">
-            {/*<button
+            <button
               className={
                 peliPlay === datas.pelisLink.netu
                   ? "btn-single-full"
@@ -177,8 +177,8 @@ export const PelisDetails = ({movies}) => {
               onClick={() => setPeliPlay(datas.pelisLink.netu)}
             >
               Netu
-            </button>*/}
-            {/*<button
+            </button>
+            <button
               className={
                 peliPlay === datas.pelisLink.streamsb
                   ? "btn-single-full"
@@ -187,7 +187,7 @@ export const PelisDetails = ({movies}) => {
               onClick={() => setPeliPlay(datas.pelisLink.streamsb)}
             >
               StreamSB
-            </button>*/}
+            </button>
           </div>
           <iframe
             title={datas.title}

@@ -3,6 +3,7 @@ import {data} from 'dataBd/data';
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 import { Spinner } from 'Component/spinner';
+import { Carrusel } from 'Component/Carrusel';
 
 
 
@@ -13,7 +14,7 @@ export const AllPelis = ({seachBoxAll, movies, setMovies, setSeries, series }) =
     const [moviesError, setMoviesError] = useState(null);
     const [media, setMedia] = useState([]);
 
-    const All = []
+   
 
     const moviesGet = async () =>{
       try {
@@ -109,6 +110,7 @@ export const AllPelis = ({seachBoxAll, movies, setMovies, setSeries, series }) =
 
   return (
   <>
+   <Carrusel/>
       {loader ? (!moviesError ? <Spinner/> : <p className='texto'>{moviesError}</p>)  : datas?.map((pelis, i) => (
       <Card
         key={pelis.id}

@@ -121,8 +121,7 @@ export const SeriesDetails = ({series}) => {
       opacity: 0,
     });
   }, []);
-  console.log(peliPlay)
-   console.log(episodios)
+
   return (
     datas && (
       <div>
@@ -167,6 +166,7 @@ export const SeriesDetails = ({series}) => {
             las películas
           </p>
         </div>
+        <div className="contentBtn">
         <div className="btn">
             
             {datas.series.map(temporadas => 
@@ -193,6 +193,7 @@ export const SeriesDetails = ({series}) => {
               </div>
             
           </div>
+        </div>
         <div className="reproductor">
           
           <iframe

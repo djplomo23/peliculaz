@@ -13,6 +13,7 @@ import insta from './img/instagram-svgrepo-com.svg';
 import { SeriesDetails } from "Screen/SeriesDetails";
 
 
+
 function App() {
   
   const [seachBox, setSeachBox] = useState("");
@@ -62,6 +63,7 @@ function App() {
         <input value={seachBox}  onChange={(e) => setSeachBox(e.target.value)}></input>
       </header>
       <div className="body">
+       
         <Routes>
           <Route path="/" element={<AllPelis seachBoxAll={seachBox} setSeries={setSeries} setMovies={setMovies} series={series} movies={movies} />} />
          <Route path="/movies=:title/id=:id" element={<PelisDetails movies={movies} />} />
