@@ -308,9 +308,7 @@ body::-webkit-scrollbar{
   filter: contrast(120%);
 }
 
-.carr{
-  position: absolute;
-}
+
 
 .card {
   /* Add shadows to create the "card" effect */

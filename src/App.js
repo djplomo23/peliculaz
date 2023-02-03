@@ -95,6 +95,14 @@ function App() {
         <button onClick={nextPage}>Siguiente</button>
         </div>*/}
       <p style={{ margin: "15px", textAlign: "left" }}>
+      "¡Bienvenidos a Películaz.xyz, la mejor opción en entretenimiento de películas en línea! ¿Estás harto de la misma selección limitada en las plataformas digitales de pago y la falta de calidad en la transmisión? ¡Nosotros tenemos la solución para ti! Con nuestra amplia gama de títulos actualizados constantemente, encontrarás siempre algo interesante para ver. Además, ofrecemos la transmisión en alta definición (HD) sin ningún costo adicional. ¡Imágenes nítidas y un sonido cristalino para una experiencia de visualización única!
+
+Pero eso no es todo, en Películaz.xyz también ofrecemos la posibilidad de ver todas tus películas favoritas totalmente gratis y con solo un clic. ¡Sin suscripciones ni pagos mensuales! ¿Qué esperas para unirte a nosotros?
+
+Nuestra plataforma es intuitiva y fácil de usar, lo que significa que puedes disfrutar de tus películas sin interrupciones y sin complicaciones. ¡Explora nuestro amplio catálogo de títulos clásicos y nuevos, todos en alta definición y totalmente gratuitos!
+
+En Películaz.xyz, valoramos tu tiempo y tus necesidades de entretenimiento, por eso ofrecemos una experiencia sin problemas y a solo un clic de distancia. ¡Únete a nuestra comunidad de cinéfilos hoy mismo y descubre por qué somos la mejor alternativa a las plataformas digitales de pago! ¡No te pierdas la oportunidad de ver tus películas favoritas en alta definición y sin costo alguno! ¡Haz clic y comienza a disfrutar ahora mismo!"
+
         La calidad del cien en tu hogar con películas 100% HD, audio latino, sin
         necesidad de descargar a un solo click de reproducir. Ver películas es
         la pasión de muchos, y si es Online desde la comodidad de tu hogar es
