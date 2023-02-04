@@ -29,8 +29,6 @@ function App() {
 
   
 
-
-
   /*const postMovies = async () =>{
 
     for (let i = 0; i < data.length; i++) {
@@ -66,7 +64,7 @@ function App() {
        
         <Routes>
           <Route path="/" element={<AllPelis seachBoxAll={seachBox} setSeries={setSeries} setMovies={setMovies} series={series} movies={movies} />} />
-         <Route path="/movies=:title/id=:id" element={<PelisDetails movies={movies} />} />
+         <Route path="/movies=:title/id=:id" element={<PelisDetails movies={movies}  />} />
          <Route path="/series=:title/id=:id" element={<SeriesDetails series={series} />} />
          <Route path="*" element={<Error404 />} />
         </Routes>

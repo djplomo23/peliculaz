@@ -53,7 +53,7 @@ export const Card = ({ pelis}) => {
       <div className="yearTime"><p>{pelis.pelis.years}</p> <p>{pelis.pelis.time}</p></div>
     </div>
         <img
-          loading="lazy"
+          //loading="lazy"
           src={pelis.pelis.image.url}
           alt={pelis.pelis.title}
         />

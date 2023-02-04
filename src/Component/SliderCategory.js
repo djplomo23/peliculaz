@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 
-export const Carrusel = ({ seachBox}) => {
+export const SliderCategory = ({ seachBox}) => {
     const [carrusel, setCarrusel] = useState([])
 
     const carruselGet = async () =>{

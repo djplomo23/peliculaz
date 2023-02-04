@@ -15,12 +15,20 @@ export const AllPelis = ({seachBoxAll, movies, setMovies, setSeries, series }) =
     const [media, setMedia] = useState([]);
 
    
-
+    const pull =[]
     const moviesGet = async () =>{
       try {
         const peliculas = await axios.get('https://backend-peliculaz.herokuapp.com/api/movies?sort=-createdat&limit=500')
-       //console.log(peliculas)
-      setMovies(peliculas.data.docs)
+
+        peliculas.data.docs.forEach(element => {
+          pull.push(element)
+        });
+      const peliculasS = await axios.get('https://backend-peliculaz.herokuapp.com/api/series?sort=-createdat&limit=500')
+
+        peliculasS.data.docs.forEach(element => {
+          pull.push(element)
+        });
+        setMovies(pull)
       
       setLoader(false)
       } catch (error) {
@@ -29,81 +37,40 @@ export const AllPelis = ({seachBoxAll, movies, setMovies, setSeries, series }) =
       }
     }
 
-    //console.log(All)
-
-
-    const seriesGet = async () =>{
-      try {
-        const peliculas = await axios.get('https://backend-peliculaz.herokuapp.com/api/series?sort=-createdat&limit=500')
-        console.log(peliculas.data)
-        setSeries(peliculas.data.docs)
-        
-      
-      setLoader(false)
-      } catch (error) {
-        console.log(error)
-        setMoviesError(error.message)
-      }
-    }
 
 
 
     useEffect(() => {
-      
       moviesGet()
-      seriesGet()
-      
-      
     }, [])
 
     useEffect(() => {
       setSeachBox(seachBoxAll)
-      moviesGet()
-      seriesGet()
-     
-      
     }, [seachBoxAll])
 
-
-    useEffect(() => {
-      
-      for (let i = 0; i < series.length; i++) {
-        const element = series[i];
-        
-        if(movies.every(movie => movie.id !== element.id)){
-          setMovies([...movies, element])
-        }
-      
+    movies.sort(function (a, b) {
+      if (a.createdAt > b.createdAt) {
+        return 1;
       }
-
-    }, [series, movies])
-
-
+      if (a.createdAt < b.createdAt) {
+        return -1;
+      }
+      return 0;
+    })
     
-
-   
-
-   
-
-  
- 
 
    const datas = movies?.filter(
     (pelis) =>
       pelis.title.toUpperCase().includes(seachBox.toUpperCase()) ||
       pelis.description.toUpperCase().includes(seachBox.toUpperCase()) ||
-      pelis.info.origialTitle.toUpperCase().includes(seachBox.toUpperCase()) 
+      pelis.info.origialTitle.toUpperCase().includes(seachBox.toUpperCase()) ||
+      pelis.info.actores.toUpperCase().includes(seachBox.toUpperCase()) || 
+      pelis.info.director.toUpperCase().includes(seachBox.toUpperCase()) ||
+      pelis.info.generos.toUpperCase().includes(seachBox.toUpperCase()) ||
+      pelis.years.toUpperCase().includes(seachBox.toUpperCase()) 
       
       
-  ).sort(function (a, b) {
-    if (a.createdAt > b.createdAt) {
-      return 1;
-    }
-    if (a.createdAt < b.createdAt) {
-      return -1;
-    }
-    return 0;
-  })
+  )
 
     
     

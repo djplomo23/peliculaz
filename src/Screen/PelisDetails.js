@@ -120,6 +120,7 @@ export const PelisDetails = ({movies}) => {
       opacity: 0,
     });
   }, []);
+
    
 
   return (
