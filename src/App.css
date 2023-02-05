@@ -299,13 +299,14 @@ body::-webkit-scrollbar{
   flex-grow: 1;
   object-fit: cover;
   opacity: .8;
-  transition: .5s ease;
+  transition: .3s ease-in-out;
 }
 
 .carrusel img:hover{
   width: 200px;
   opacity: 1;
   filter: contrast(120%);
+  
 }
 
 
@@ -320,6 +321,7 @@ body::-webkit-scrollbar{
   max-width: 200px;
   margin: 10px;
   overflow: hidden;
+  position: relative;
   
 }
 

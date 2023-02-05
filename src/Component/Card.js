@@ -16,14 +16,14 @@ export const Card = ({ pelis}) => {
    
    
    const cardOpaciti = useRef(null)
-   let CardAnimate
+   /*let CardAnimate
   
    useEffect(() => {
      CardAnimate = gsap.timeline({defaults: {
       duration: 2.5, 
       ease: "elastic.out(1, 0.3)"
     }})
-  }, [])
+  }, [pelis])
 
 
    useEffect(() => {
@@ -37,7 +37,7 @@ export const Card = ({ pelis}) => {
       scale: 1,
       
     }, "<");
-  }, [])
+  }, [pelis])*/
   
   
   
