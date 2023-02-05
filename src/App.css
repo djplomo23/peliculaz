@@ -160,8 +160,16 @@ body::-webkit-scrollbar{
   grid-column: 1 / 2;
   overflow: hidden;
   margin: auto;
+  animation: imagenDetalle ease-in 2s;
   
   
+}
+
+@keyframes imagenDetalle {
+  0%{opacity: 0;}
+  100%{
+    opacity: 1;
+  }
 }
 
 .arrow{
@@ -179,6 +187,19 @@ body::-webkit-scrollbar{
   grid-column: 2 / 8;
   margin: auto;
   color: white;  
+  animation: Detalle ease-in 3s ;
+}
+
+@keyframes Detalle {
+  0%{opacity: 0;
+      color: darkorange;
+  }
+  100%{
+    opacity: 1;
+    color: white;
+    transform: translateX(-500);
+  }
+
 }
 .detail p {
   text-align: start;
@@ -287,6 +308,8 @@ body::-webkit-scrollbar{
   place-items: center;
 }
 
+
+
 .carrusel{
   display: flex;
   width: 600px;
@@ -300,7 +323,15 @@ body::-webkit-scrollbar{
   object-fit: cover;
   opacity: .8;
   transition: .3s ease-in-out;
+  animation: carruselInit ease-in 2s ;
 }
+
+@keyframes carruselInit{
+  0% {opacity: 0;}
+  100% {opacity: 0.8;}
+}
+
+
 
 .carrusel img:hover{
   width: 200px;
@@ -308,6 +339,7 @@ body::-webkit-scrollbar{
   filter: contrast(120%);
   
 }
+
 
 
 
@@ -322,8 +354,17 @@ body::-webkit-scrollbar{
   margin: 10px;
   overflow: hidden;
   position: relative;
+  animation: carruselInit ease-in 1.6s ;
   
 }
+
+.card:hover{
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+
+
 
 .warnning{
   color: white;
@@ -522,7 +563,10 @@ img {
   .detail{
   margin: 0;
   height: auto;
+  
   }
+
+  
   .detail p {
     
     margin: 5px;
