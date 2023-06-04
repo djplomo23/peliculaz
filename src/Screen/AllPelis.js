@@ -49,15 +49,15 @@ export const AllPelis = ({seachBoxAll, movies, setMovies, setSeries, series }) =
     }, [seachBoxAll])
 
     movies.sort(function (a, b) {
-      if (a.createdAt > b.createdAt) {
+      if (a.updatedAt > b.updatedAt) {
         return 1;
       }
-      if (a.createdAt < b.createdAt) {
+      if (a.updatedAt < b.updatedAt) {
         return -1;
       }
       return 0;
     })
-    
+     console.log(movies)
 
    const datas = movies?.filter(
     (pelis) =>
