@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.3b316ec8.css",
-    "main.js": "/static/js/main.162ba263.js",
-    "static/js/787.716eef48.chunk.js": "/static/js/787.716eef48.chunk.js",
-    "static/media/instagram-svgrepo-com.svg": "/static/media/instagram-svgrepo-com.b0c41ef1bfe3bad0f51e71ce6d2e110e.svg",
-    "index.html": "/index.html",
-    "main.3b316ec8.css.map": "/static/css/main.3b316ec8.css.map",
-    "main.162ba263.js.map": "/static/js/main.162ba263.js.map",
-    "787.716eef48.chunk.js.map": "/static/js/787.716eef48.chunk.js.map"
+    "main.css": "/peliculaz/static/css/main.3b316ec8.css",
+    "main.js": "/peliculaz/static/js/main.09471d4e.js",
+    "static/js/787.716eef48.chunk.js": "/peliculaz/static/js/787.716eef48.chunk.js",
+    "static/media/instagram-svgrepo-com.svg": "/peliculaz/static/media/instagram-svgrepo-com.b0c41ef1bfe3bad0f51e71ce6d2e110e.svg",
+    "index.html": "/peliculaz/index.html",
+    "main.3b316ec8.css.map": "/peliculaz/static/css/main.3b316ec8.css.map",
+    "main.09471d4e.js.map": "/peliculaz/static/js/main.09471d4e.js.map",
+    "787.716eef48.chunk.js.map": "/peliculaz/static/js/787.716eef48.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3b316ec8.css",
-    "static/js/main.162ba263.js"
+    "static/js/main.09471d4e.js"
   ]
 }
