@@ -8,7 +8,7 @@ export const Carrusel = ({ seachBox}) => {
 
     const carruselGet = async () =>{
         try {
-          const datas = await axios.get('https://backend-peliculaz.herokuapp.com/api/carrusel?sort=-createdat&limit=500')
+          const datas = await axios.get('https://backend-peliculaz-production.up.railway.app/api/carrusel?sort=-createdat&limit=500')
          //console.log(peliculas)
          setCarrusel(datas.data.docs)
         } catch (error) {

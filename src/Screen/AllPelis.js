@@ -17,13 +17,14 @@ export const AllPelis = ({seachBoxAll, movies, setMovies, setSeries, series }) =
    
     const pull =[]
     const moviesGet = async () =>{
+      const http = 'https://backend-peliculaz-production.up.railway.app'
       try {
-        const peliculas = await axios.get('https://backend-peliculaz.herokuapp.com/api/movies?sort=-createdat&limit=500')
+        const peliculas = await axios.get(`${http}/api/movies?sort=-createdat&limit=500`)
 
         peliculas.data.docs.forEach(element => {
           pull.push(element)
         });
-      const peliculasS = await axios.get('https://backend-peliculaz.herokuapp.com/api/series?sort=-createdat&limit=500')
+      const peliculasS = await axios.get(`${http}/api/series?sort=-createdat&limit=500`)
 
         peliculasS.data.docs.forEach(element => {
           pull.push(element)

@@ -19,7 +19,7 @@ export const SeriesDetails = ({series}) => {
 
   const moviesGet = async () =>{
     try {
-      const peliculas = await axios.get(`https://backend-peliculaz.herokuapp.com/api/series/${params.id}`)
+      const peliculas = await axios.get(`https://backend-peliculaz-production.up.railway.app/api/series/${params.id}`)
     //console.log(peliculas.data)
     setDatas(peliculas.data)
     } catch (error) {
